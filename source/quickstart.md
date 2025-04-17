@@ -131,6 +131,7 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
 ]
 
 ```
+
 ## 无效的JSON示例
 ```json
 // 未被数组包裹
@@ -151,6 +152,7 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
 
 // 数组包含混合类型
 [{"name": "John"}, "text"]
+```
 
 ## 转换示例
 
