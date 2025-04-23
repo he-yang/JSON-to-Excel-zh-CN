@@ -1,6 +1,8 @@
 
 # 简介
 
+[English](https://json-to-excel.wtsolutions.cn/en/latest/quickstart.html)
+
 JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件。
 
 # 系统要求
