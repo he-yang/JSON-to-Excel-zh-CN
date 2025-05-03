@@ -18,6 +18,7 @@ English Version of Documentation https://JSON-to-Excel.wtsolutions.cn/en/latest/
    :caption: Contents:
 
    quickstart.md
+   profeatures.md
    contact.md
    termsofuse.md
    privacy.md
