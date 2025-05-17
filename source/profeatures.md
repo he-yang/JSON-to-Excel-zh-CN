@@ -130,6 +130,11 @@ Excel 输出将如下所示：
 |1|Meimei|meimei@school.com|123-456-7890|{"street":"123 School St","city":"Beijing"}|
 |2|Lily|lily@school.com|098-765-4321|{"street":"456 School Ave","city":"Shanghai"}|
 
+### 加载本地JSON文件，用于批量处理
+
+加载JSON文件功能允许您将多个JSON文件加载到插件中，然后将它们批量转换为Excel表。此功能仅对订阅了插件的用户开放。
+
+注意：每次转换最多支持20个文件。
 
 ## 更多功能
 

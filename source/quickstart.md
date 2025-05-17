@@ -9,7 +9,7 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
 此插件支持以下版本：Excel 2013 Service Pack 1 或更高版本、Excel 2016 for Mac、Excel 2016 或更高版本、Excel Online、Office 365 等。
 
 # 快速入门
-本快速入门适用于 v 2.1.0 版本
+本快速入门适用于 v 2.1.1 版本
 
 ## 获取插件
 * 在 Excel 2013/2016、Excel Online 或 Office 365 中打开新的数据表。
@@ -25,9 +25,10 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
 
 ## 使用插件
 * 准备您的 JSON 数据
-* 将您的 JSON 数据填入 JSON-to-Excel 的文本区域
+* 加载 JSON数据（如下二选一）
+    1. 复制粘贴您的 JSON 数据到 JSON-to-Excel 的文本区域, 或
+    2. 在Pro Features 中选择 Load JSON File(s)，即可批量选择多个JSON文件。本选项需要使用专业版功能Pro Features
 * 选择转换模式，然后点击Go按钮
-
 
 
 ```
@@ -207,6 +208,7 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
 - 每次转换最多1000个对象（行）
 - 每个数据集最多100个唯一属性（列）
 - 数组类型的值将在Excel中转换为字符串
+- 最多单次批量转换20个JSON文件(Pro Features Load JSON File(s))
 
 
 # 错误提示
