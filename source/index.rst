@@ -7,7 +7,7 @@ Excel 加载项 JSON-to-Excel 在 Excel 中将 JSON 转换为 Excel（网页在�
 =======================================================
 JSON-to-Excel 是一个 Microsoft Excel 加载项，可以在 Excel 中将 JSON 转换为 Excel。
 
-使用此加载项可以转换**扁平和嵌套的 JSON** 数据。
+使用此加载项可以转换 **扁平和嵌套的JSON** 数据。
 
 此加载项可在 Microsoft 商店 - Appsource 获取，可以直接在 Excel 中访问，因此无需下载，只需在 Excel 中单击即可运行加载项。
 
