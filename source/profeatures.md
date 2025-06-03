@@ -17,7 +17,9 @@ JSON-to-Excel 提供了一系列增强功能的专业功能。这些功能仅适
 
 每个专业代码对 WTSolutions 提供的 Excel-to-JSON 加载项和 JSON-to-Excel 均有效。
 
-通过 Stripe 订阅，链接在此 [https://buy.stripe.com/00gdQT2iz0Vp32E002](https://buy.stripe.com/00gdQT2iz0Vp32E002)
+### 通过 Stripe 订阅、支付
+
+链接在此 [https://buy.stripe.com/00gdQT2iz0Vp32E002](https://buy.stripe.com/00gdQT2iz0Vp32E002)
 
 支付方式：
 - 银行卡（Visa、Mastercard、American Express、JCB、银联）
@@ -27,6 +29,10 @@ JSON-to-Excel 提供了一系列增强功能的专业功能。这些功能仅适
 
 有关订阅条款，请参阅 [使用条款](termsofuse.md)
 
+### 取消订阅
+
+您可以随时取消订阅。当前计费周期结束后，您将无法再访问专业功能。
+链接在此 [https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00](https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00)
 
 
 ## 6.2 专业功能
