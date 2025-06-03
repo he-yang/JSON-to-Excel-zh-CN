@@ -1,7 +1,11 @@
-# Contact
-## Email
+# 7 联系方式
+## 电子邮件
 
-  发送邮件he.yang@wtsolutions.cn
+  请发送邮件至：he.yang@wtsolutions.cn
+
+## 反馈表单
+  您也可以通过以下表单向作者提交反馈：
+  [https://s.wtsolutions.cn/redirect.html#useradviceform](https://s.wtsolutions.cn/redirect.html#useradviceform)
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>

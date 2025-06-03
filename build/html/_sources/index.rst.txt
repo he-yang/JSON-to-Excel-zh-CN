@@ -3,10 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Excel 加载项 JSON-to-Excel 在 Excel 中将 JSON 转换为 Excel（网页在线版、Windows、Mac、Linux）
+JSON-to-Excel by WTSolutions 在 Excel 中将 JSON 转换为 Excel（网页在线版、Windows、Mac、Linux）
 =======================================================
-JSON-to-Excel 是一个 Microsoft Excel 加载项，可以在 Excel 中将 JSON 转换为 Excel。使用此加载项可以转换扁平和嵌套的 JSON 数据。
-此加载项可在 Microsoft 商店 - Appsource 获取，可以直接在 Excel 中访问，因此无需下载，只需在 Excel 中单击即可运行加载项。
+JSON to Excel 是一个 **Microsoft Excel 加载项** 或 **Web 应用程序**，可以将 JSON 转换为 Excel。平坦/嵌套的 JSON 都可以转换。
 
 English Version of Documentation https://JSON-to-Excel.wtsolutions.cn/en/latest/
 
@@ -15,6 +14,7 @@ English Version of Documentation https://JSON-to-Excel.wtsolutions.cn/en/latest/
    :caption: Contents:
 
    quickstart.md
+   profeatures.md
    contact.md
    termsofuse.md
    privacy.md

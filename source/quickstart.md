@@ -1,93 +1,98 @@
 
-# 简介
+# 1. 简介
 
 [English](https://json-to-excel.wtsolutions.cn/en/latest/quickstart.html)
 
-JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件。
+JSON to Excel 是一个 **Microsoft Excel 加载项**或**Web 应用程序**，可以将 JSON 转换为 Excel。平坦/嵌套的 JSON 都可以转换。
 
-# 系统要求
-此插件支持以下版本：Excel 2013 Service Pack 1 或更高版本、Excel 2016 for Mac、Excel 2016 或更高版本、Excel Online、Office 365 等。
+# 2. 要求
 
-# 快速入门
-本快速入门适用于 v 2.1.3 版本
+选项 1. 在 Web 浏览器中加载 JSON to Excel
+* 支持 JavaScript 的 Web 浏览器，例如 Google Chrome、Mozilla Firefox、Safari 或 Microsoft Edge。
 
-## 获取插件
-* 在 Excel 2013/2016、Excel Online 或 Office 365 中打开新的数据表。
-* **开始**选项卡或**插入**选项卡 > 加载项
-* 在搜索框中输入 "JSON to Excel"
-* 按照屏幕上的说明安装插件，安装完成后您将在**开始**选项卡中看到 JSON-to-Excel 按钮。
-* **开始**选项卡 > JSON to Excel > 转换Convert
-* 现在您可以开始使用此插件了。
+选项 2. 在 Excel 中旁加载 JSON to Excel（推荐）
+* Excel 2013 Service Pack 1 或更高版本，
+* Mac 版 Excel 2016，
+* Excel 2016 或更高版本，
+* Excel Online，
+* Office 365 等。
 
-## 视频演示
+# 3. 快速入门
+本快速入门适用于 v 3.0.0
+
+## 3.1 （旁）加载 JSON to Excel
+
+选项 1. 在 Web 浏览器中加载 JSON to Excel
+* 打开支持 JavaScript 的 Web 浏览器，例如 Google Chrome、Mozilla Firefox、Safari 或 Microsoft Edge。
+* 在您的 Web 浏览器中打开以下 URL：<a href="https://s.wtsolutions.cn/json-to-excel.html" target="_blank">https://s.wtsolutions.cn/json-to-excel.html</a>
+
+
+选项 2. 在 Excel 中旁加载 JSON to Excel（推荐）
+* 在 Excel 2013/2016 或 Excel Online 或 Office 365 中打开一个新的工作表。
+* **主页**选项卡或**插入**选项卡 > 加载项
+* 在搜索框中，输入“JSON to Excel”
+* 按照屏幕上的说明安装加载项，您将在**主页**选项卡中看到一个名为 JSON-to-Excel 的按钮。
+* **主页**选项卡 > JSON to Excel > 转换
+* 现在您已准备好使用此加载项。
+
+### 获取加载项的视频指南（在 Excel 中旁加载）
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
-## 使用插件
+
+## 3.2 使用 JSON to Excel
 * 准备您的 JSON 数据
-* 加载 JSON数据（如下二选一）
-    1. 复制粘贴您的 JSON 数据到 JSON-to-Excel 的文本区域, 或
-    2. 在Pro Features 中选择 Load JSON File(s)，即可批量选择多个JSON文件。本选项需要使用专业版功能Pro Features
-* 选择转换模式，然后点击Go按钮
+* 在设置框中，选择转换模式等。
+* 加载您的 JSON 数据（选择以下两种方式之一）
+    1. 在文本区域中复制并粘贴您的 JSON 数据，或者
+    2. 单击“加载 JSON 文件”文件选择器，并从本地计算机中选择您的 JSON 文件，用于批量处理（专业功能），一次最多可加载 20 个文件。
+* 单击“Go”按钮
+
+### 限制
+- 每次转换最多 1000 个对象（行）
+- 每个数据集最多 100 个唯一属性（列）
+- 值中的数组将转换为 Excel 中的字符串
+- 一次最多可转换 20 个加载的本地 JSON 文件（专业功能）
 
 
-```
-[
-    {
-        "name":"David",
-        "age":20
-    },
-    {
-        "name":"Lily",
-        "age":22
-    }
-]
-```
 
-> 注意，只能处理常规 JSON 数据。只有 JSON 第一个元素中的键会被解析为表头。除了上述要求外，无需担心其他问题。
+### 使用加载项的视频指南（在 Excel 中旁加载）
 
-> 注意：您的 JSON 数据必须用数组 [] 包裹，请参考以下示例。请尽量按照下面的格式调整，以避免错误。
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
-## 可接受的JSON格式
 
-### 格式
-输入必须是包含对象的有效JSON数组。数组中的每个对象代表Excel输出中的一行。
+## 3.3 转换设置
 
-```json
-[
-    {"property1": value1, "property2": value2, ...},
-    {"property1": value3, "property2": value4, ...}
-]
-```
+### 转换模式
+有两种转换模式：平面 JSON 模式和嵌套 JSON 模式。
 
-### 规则
-1. 必须用方括号[]包裹，作为数组
-2. 必须包含至少一个对象{}
-3. 每个对象必须至少有一个属性
+> 请先参考下面的示例，以帮助您理解这两种模式
 
-### 支持的值类型
-- 字符串: "text"
-- 数字: 123 , 45.67
-- 布尔值: true , false
-- Null: null
-    - 在Excel中会转换为空白单元格
-- 数组: [1, 2, 3]
-    - 在Excel中会转换为字符串形式 "[1,2,3]"
-- 对象: {"x": 1}
-    - 如果选择Flat JSON模式，会在Excel中转换为字符串形式 '{"x": 1}'
-    - 如果选择Nested JSON模式，会被展开
+- 平面 JSON 模式
+   - 用于没有嵌套结构的简单 JSON 对象
+   - 每个属性都成为 Excel 中的一列
+- 嵌套 JSON 模式
+   - 用于具有嵌套结构的 JSON 对象
+   - 嵌套属性使用点/下划线/双下划线/斜杠分隔符进行展平
+   - 默认情况下转换无限深度。使用专业功能中的“最大嵌套深度”设置自定义嵌套对象的最大深度（1 到 20，或无限）。
 
-# 模式选择
-> 请先参考下方示例以帮助理解两种模式
-1. Flat JSON模式   
-   - 用于没有嵌套结构的简单JSON对象
-   - 每个属性成为Excel中的一列
-2. Nested JSON模式   
-   - 用于有嵌套结构的JSON对象
-   - 嵌套属性使用点表示法展开
-   - 示例：contact.email将成为列名
-   - 使用[专业版功能](profeatures.md)中的嵌套分隔符设置来自定义分隔符(点号、下划线、斜杠)
-   - 使用[专业版功能](profeatures.md)中的最大嵌套深度设置来自定义嵌套对象的最大深度(1到20)，超过设定深度的嵌套对象将被转换为字符串格式
+### 嵌套分隔符
+
+用于分隔 Excel 输出中嵌套属性的分隔符。
+
+- 点 (.)
+- 下划线 (_) [专业功能]
+- 双下划线 (__) [专业功能]
+- 斜杠 (/) [专业功能]
+
+### 最大嵌套深度
+
+要展平的嵌套对象的最大深度。
+
+- 无限
+- 1 到 20 [专业功能]
+
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
@@ -101,15 +106,50 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-# 示例
+## 3.4 加载 JSON 数据
 
-## 有效的JSON示例
+有两种加载 JSON 数据的方式：
+- 在文本区域中复制并粘贴您的 JSON 数据
+- 单击“加载 JSON 文件”文件选择器，并从本地计算机中选择您的 JSON 文件，用于批量处理（专业功能），一次最多可加载 20 个文件。
+
+### 可接受的 JSON 格式
+#### 所需格式
+输入必须是包含对象的有效 JSON 数组。数组中的每个对象代表 Excel 输出中的一行。
+
 ```json
+[
+    {"property1": "value1", "property2": "value2", ...},
+    {"property1": "value3", "property2": "value4", ...}
+]
+```
 
-// 简单的单个扁平对象
+#### JSON 格式规则
+- 必须用方括号 [] 包裹，作为数组
+- 必须至少包含一个对象 {}
+- 每个对象必须至少有一个属性
+
+#### 支持的值类型
+- 字符串: "text"
+- 数字: 123 , 45.67
+- 布尔值: true , false
+- 空值: null
+    - 将转换为 Excel 中的空白单元格
+- 数组: [1, 2, 3]
+    - 将转换为 Excel 中的字符串，如 "[1,2,3]"
+- 对象: {"x": 1}
+    - 如果选择平面模式，将转换为 Excel 中的字符串，如 '{"x": 1}'
+    - 如果选择嵌套模式，将展平
+
+
+
+# 4. 示例
+
+## 4.1 有效 JSON 示例
+```json
+// 简单，一个平面对象
 {"name": "John", "age": 30}
 
-// 简单的多个扁平对象
+// 简单，平面对象
 [
     {"name": "John", "age": 30},
     {"name": "Jane", "age": 25}
@@ -121,9 +161,9 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
     {"name": "Jane", "city": "New York"}
 ]
 
-// 具有嵌套结构的对象(使用嵌套JSON模式)
-// - 使用专业版功能中的嵌套分隔符设置来自定义分隔符(点号、下划线、斜杠)
-// - 使用专业版功能中的最大嵌套深度设置来自定义嵌套对象的最大深度(4到10)
+// 具有嵌套结构的对象（使用嵌套 JSON 模式）
+// 使用专业功能中的“嵌套分隔符”设置自定义分隔符（点、下划线、斜杠）
+// 使用专业功能中的“最大嵌套深度”设置自定义嵌套对象的最大深度（1 到 20，或无限）
 [
     {
         "name": "John",
@@ -142,32 +182,33 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
 ]
 
 ```
+## 4.2 无效 JSON 示例
 
-## 无效的JSON示例
 ```json
-// 未被数组包裹
-{"name": "John"}, {"name": "Jane"}
+// 未用数组包裹
+{"name": "John"},{"name": "Lily", "age": 30}
 
 // 空数组
 []
 
-// 数组包含非对象元素
+// 包含非对象元素的数组
 [1, 2, 3]
 ["a", "b", "c"]
 
-// 数组包含空对象
+// 包含空对象的数组
 [{}]
 
-// 数组包含null值
+// 包含 null 的数组
 [null]
 
-// 数组包含混合类型
+// 混合类型的数组
 [{"name": "John"}, "text"]
+
 ```
 
-## 转换示例
+## 4.3 转换示例
 
-### JSON转Excel示例
+### JSON 到 Excel 示例
 
 #### 输入
 ```json
@@ -189,69 +230,45 @@ JSON to Excel 是一个可以将 JSON 转换为 Excel 的 Microsoft Excel 插件
 ]
 
 ```
-#### Output
-> 使用 Flat JSON mode
+#### 输出
+> 平面 JSON 模式
 
 |name|contact|
 |--|--|
 |John|{"email":"john@example.com","phone":"1234567890"}|
 |Jane|{"email":"jane@example.com","phone":"0987654321"}|
 
-> 使用 Nested JSON mode
+> 嵌套 JSON 模式
 
 |name|contact.email|contact.phone|
 |--|--|--|
 |John|john@example.com|1234567890|
 |Jane|jane@example.com|987654321|
 
-- 使用[专业版功能](profeatures.md)中的嵌套分隔符设置来自定义分隔符(点号、下划线、斜杠)
-- 使用[专业版功能](profeatures.md)中的最大嵌套深度设置来自定义嵌套对象的最大深度(4到10)
+   - 使用专业功能中的“嵌套分隔符”设置自定义分隔符（点、下划线、双下划线、斜杠）
+   - 使用专业功能中的“最大嵌套深度”设置自定义嵌套对象的最大深度（1 到 20，或无限）
+   
 
 
-# 限制条件
-- 每次转换最多1000个对象（行）
-- 每个数据集最多100个唯一属性（列）
-- 数组类型的值将在Excel中转换为字符串
-- 最多单次批量转换20个JSON文件(Pro Features Load JSON File(s))
+# 5. 错误
+
+## 5.1 无效 JSON
+
+当 JSON to Excel 弹出无效 JSON 的错误提示时，表示 JSON 不符合 JSON 架构。
+
+### 加载项检查
+* 加载项将检查您的 JSON 数据是否符合上述可接受的 JSON 格式要求。如果出错，将显示错误消息。
 
 
-# 错误提示
+## 5.2 列数过多
 
-## 无效的JSON
+当您弹出列数过多错误时，表示您在一个元素中包含过多的键值对。
 
-当插件弹出无效JSON的错误提示时，表示JSON不符合JSON架构要求。以下两个步骤可以帮助你获得此插件可接受的JSON数据。
-
-### JSON有效性预检查
-* 使用[免费网络服务](https://jsononline.net/json-validator)进行JSON有效性预检查，请确保该网站显示你的JSON文件**JSON是有效的**。
-
-### 插件检查
-* 插件将进一步检查你的JSON数据是否符合上述插件要求的可接受JSON格式。
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-8772217510669640"
-     data-ad-slot="2653271427"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-## 列数过多
-
-当出现列数过多的错误提示时，表示在单个元素中包含了过多的键值对。
-
-一个元素中包含两个键值对，
+一个元素包含两个键值对，
 ```
     {
         "name":"Lily",
         "age":22
     }
 ```
-插件目前最多可接受100个键值对。
-
-
-## 微信公众号
-![微信公众号](https://invest.wtsolutions.cn/wechat.png)
+并且加载项现在最多只能接受 100 个键值对。
