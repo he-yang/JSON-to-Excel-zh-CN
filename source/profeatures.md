@@ -25,6 +25,7 @@ JSON-to-Excel 提供了一系列增强功能的专业功能。这些功能仅适
 - 银行卡（Visa、Mastercard、American Express、JCB、银联）
 - Apple Pay（需要使用您的 Apple/IOS/Mac 设备打开上述链接）
 - Google Pay（需要使用您的 Google/Android 设备打开上述链接）
+- Alipay 支付宝
 - Link
 
 有关订阅条款，请参阅 [使用条款](termsofuse.md)
