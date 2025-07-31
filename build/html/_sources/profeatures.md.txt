@@ -1,53 +1,109 @@
-# 6. 专业功能
+# 4. JSON Data and Conversion Settings
 
-[English](https://json-to-excel.wtsolutions.cn/en/latest/profeatures.html)
+[中文](https://json-to-excel.wtsolutions.cn/zh-cn/latest/profeatures.html)
 
-JSON-to-Excel 提供了一系列增强功能的专业功能。这些功能仅适用于已订阅 JSON to Excel 的用户。
-
-## 6.1 订阅、支付和取消
-
-7 天免费试用，之后您将按以下费率每月收取专业功能费用。您可以在第 7 天之前的任何时间取消订阅，并且不会被收费：
-- 美元 US$2.66 / 月，
-- 人民币 ¥19.90 / 月，
-- 欧元 €2.36 / 月，
-- 港币 HK$21.80 / 月
-- 如果 Stripe 支持，则为您的当地货币。
-
-每个专业代码可提供 10 台设备访问专业功能。7 天试用期结束后，您可以随时取消订阅，这将在当前计费周期结束时生效。
-
-每个专业代码对 WTSolutions 提供的 Excel-to-JSON 加载项和 JSON-to-Excel 均有效。
-
-通过 Stripe 订阅，链接在此 [https://buy.stripe.com/00gdQT2iz0Vp32E002](https://buy.stripe.com/00gdQT2iz0Vp32E002)
-
-支付方式：
-- 银行卡（Visa、Mastercard、American Express、JCB、银联）
-- Apple Pay（需要使用您的 Apple/IOS/Mac 设备打开上述链接）
-- Google Pay（需要使用您的 Google/Android 设备打开上述链接）
-- Link
-
-有关订阅条款，请参阅 [使用条款](termsofuse.md)
+JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专业功能](pricing.md)的规则仅对已订阅工具的用户开放。
 
 
+## 4.1 JSON数据
 
-## 6.2 专业功能
+加载JSON数据有两种方式：
+- 将JSON数据复制粘贴到文本区域
+- 点击"加载JSON文件"选择器，从本地计算机选择JSON文件进行批量处理[专业功能](pricing.md)，一次最多可加载20个文件
+> 注意，JSON数据必须满足下面[可接受的JSON格式](profeatures.md#id3)部分列出的要求。
+
+### 复制粘贴JSON数据将JSON数据复制粘贴到文本区域，您可以在文本区域下方看到JSON数据预览。
+> 注意，JSON数据必须满足下面[可接受的JSON格式](profeatures.md#id3)部分列出的要求。
+
+### 加载JSON文件
+
+"加载JSON文件"功能允许您将多个JSON文件加载到JSON转Excel中，然后将它们转换为Excel工作表。
+
+每次转换后，将生成一份报告，包括：
+- 所选JSON文件的文件名
+- 转换结果（成功或失败）
+- 成功时的工作表名称
+- 失败时的错误消息
+
+> 注意，每次转换最多20个文件。
+> 注意，JSON数据必须满足下面可接受的JSON格式部分列出的要求。
+
+#### 加载JSON文件视频演示
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114549948814092&bvid=BV1T4J7ztE87&cid=30087253525&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 
-### 无广告
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8772217510669640"
+     data-ad-slot="2653271427"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-使用有效的专业代码成功转换后，从下次启动开始（您可以关闭 JSON to Excel 然后再次启动），JSON to Excel 将不再显示广告。
-如果您没有有效的专业代码，或者您没有有效的 JSON to Excel 订阅，则会显示广告。
+### 可接受的JSON格式
 
-> 注意，如果您仍然不时看到广告，请尝试使用有效的专业代码进行转换，然后重新启动 JSON to Excel。
+#### 必需格式
+
+输入必须是包含对象的有效JSON数组。数组中的每个对象代表Excel输出中的一行。
+
+```json
+[
+    {"property1": "value1", "property2": "value2"},
+    {"property1": "value3", "property2": "value4"}
+]
+```
+
+#### JSON格式规则
+
+- 必须用方括号[]包裹，作为数组
+- 必须包含至少一个对象{}
+- 每个对象必须至少有一个属性
+
+#### 支持的值类型
+
+- 字符串: "text"
+- 数字: 123 , 45.67
+- 布尔值: true , false
+- 空值: null
+    - 在Excel中将转换为空白单元格
+- 数组: [1, 2, 3]
+    - 在Excel中将转换为字符串，如"[1,2,3]"
+- 对象: {"x": 1}
+    - 如果选择平面模式，在Excel中将转换为字符串，如'{"x": 1}'
+    - 如果选择嵌套模式，将被展平
+
+### 有效和无效的JSON数据示例
+
+有关有效和无效的JSON数据示例，请参阅[示例](examples.md)。
+
+## 4.2 转换设置
+
+### 转换模式
+
+有两种转换模式：平面JSON模式和嵌套JSON模式。有关这两种模式之间的区别，请参阅[示例](examples.md#output)。
+
+
+- 平面JSON模式
+   - 用于没有嵌套结构的简单JSON对象
+   - 每个属性成为Excel中的一列，属性名称作为列名
+- 嵌套JSON模式
+   - 用于具有嵌套结构的JSON对象
+   - 使用点/下划线/双下划线/斜杠分隔符展平嵌套属性[专业功能](pricing.md)
+   - 默认转换无限深度。使用[专业功能](pricing.md)的最大嵌套深度设置自定义嵌套对象的最大深度（1到20，或无限）
 
 ### 嵌套分隔符
 
-嵌套分隔符指定如何处理 JSON 中的嵌套对象。您可以选择：
-- 点 (.) - 默认
-- 下划线 (_)
-- 双下划线 (__)
-- 斜杠 (/)
+嵌套分隔符指定如何处理JSON中的嵌套对象。您可以选择：
+- 点(.) - 默认
+- 下划线(_) [专业功能](pricing.md)
+- 双下划线(__) [专业功能](pricing.md)
+- 正斜杠(/) [专业功能](pricing.md)
 
-例如，对于此 JSON：
+例如，对于以下JSON：
 
 ```json
 [{
@@ -67,21 +123,21 @@ JSON-to-Excel 提供了一系列增强功能的专业功能。这些功能仅适
 }]
 ```
 
-将转换为 Excel，如下所示：
+将转换为Excel如下：
 
-使用点 (.) 作为分隔符：
+使用点(.)作为分隔符：
 |id|student.name|student.familyname|student.age|
 |---|---|---|---|
 |1|Meimei|Han|12|
 |2|Lily|Jaskson|15|
 
-使用下划线 (_):
+使用下划线(_)：
 |id|student_name|student_familyname|student_age|
 |---|---|---|---|
 |1|Meimei|Han|12|
 |2|Lily|Jaskson|15|
 
-使用斜杠 (/):
+使用正斜杠(/)：
 |id|student/name|student/familyname|student/age|
 |---|---|---|---|
 |1|Meimei|Han|12|
@@ -89,13 +145,13 @@ JSON-to-Excel 提供了一系列增强功能的专业功能。这些功能仅适
 
 ### 最大嵌套深度
 
-最大深度设置控制 JSON to Excel 处理嵌套对象的深度：
+最大深度设置控制JSON转Excel处理嵌套对象的深度：
 - 默认：无限深度
-- 可接受范围：1 ~ 20（需要专业功能）
+- 可接受范围：1 ~ 20 [专业功能](pricing.md)
 
-注意：当最大深度设置为 1 到 20 之间的值时，您必须使用嵌套 JSON 模式。
+> 注意：当最大深度设置为1到20之间的值时，必须使用嵌套JSON模式。
 
-例如，对于此 JSON：
+例如，对于以下JSON：
 
 ```json
 [{
@@ -127,39 +183,34 @@ JSON-to-Excel 提供了一系列增强功能的专业功能。这些功能仅适
 }]
 ```
 
-当最大深度设置为 3 时，第 4 级嵌套对象（地址）将转换为字符串格式。如果存在第 5 级、第 6 级等嵌套对象，它们也将转换为字符串格式。
+当最大深度设置为3时，第4级嵌套对象（address）将转换为字符串格式。如果有第5级、第6级等嵌套对象，它们也将转换为字符串格式。
 
-Excel 输出将如下所示：
+Excel输出将如下所示：
 
-使用点 (.) 作为分隔符：
+使用点(.)作为分隔符：
 |id|student.name|student.contact.email|student.contact.phone|student.contact.address|
 |---|---|---|---|---|
 |1|Meimei|meimei@school.com|123-456-7890|{"street":"123 School St","city":"Beijing"}|
 |2|Lily|lily@school.com|098-765-4321|{"street":"456 School Ave","city":"Shanghai"}|
 
-### 加载 JSON 文件
 
-加载 JSON 文件功能允许您将多个 JSON 文件加载到 JSON to Excel 中，然后将它们转换为 Excel 工作表。此功能仅适用于已订阅 JSON to Excel 的用户。
+## 4.3 无广告
 
-每次转换后，将生成一份报告，其中包括：
-- 所选 JSON 文件的文件名
-- 转换结果（成功或失败）
-- 如果成功，则为工作表名称
-- 如果失败，则为错误消息
+如果您拥有有效的JSON转Excel订阅，在使用有效的专业代码成功转换后，您将不会看到广告。
 
-注意：每次转换最多 20 个文件。
+从下次启动开始（您可以关闭JSON转Excel然后重新启动），JSON转Excel将不再显示广告。
 
-#### 加载 JSON 文件视频演示
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114549948814092&bvid=BV1T4J7ztE87&cid=30087253525&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+如果您没有有效的专业代码，或者没有有效的JSON转Excel订阅，将显示广告。
 
-## 6.3 更多功能
+> 注意，如果您仍然时不时看到广告显示，请尝试使用有效的专业代码进行转换，然后重新启动JSON转Excel。
 
-如果您已订阅，并希望看到更多功能，请发送电子邮件至 he.yang@wtsolutions.cn
 
-## 6.4 专业代码
+## 4.4 更多功能
 
-专业代码是您在 Stripe 上结账 JSON to Excel 时使用的“电子邮件地址”。此代码是访问专业功能所必需的。
+如果您已订阅并希望看到更多功能，请发送电子邮件至he.yang@wtsolutions.cn
 
-## 6.5 售后服务
+## 4.5 专业代码
 
-您可以通过电子邮件 he.yang@wtsolutions.cn 联系我们，提出任何问题或疑虑。我们将尽力在 24 小时内回复您，但不迟于 72 小时。如果您的问题与您的订阅有关，请在电子邮件中包含您的“专业代码”。
+专业代码是您在Stripe或Paddle上购买JSON转Excel时使用的`电子邮件地址`。访问专业功能需要此代码。
+
+

@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <title>5. 示例 &mdash; JSON-to-Excel 3.0.0.0 documentation</title>
+    <!-- 添加自定义的 meta 标签 -->
+     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0f2a07fad68242f78630ddaf8fc89c72"}'></script><!-- End Cloudflare Web Analytics -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "JSON to Excel",
+          "description": "A Microsoft Excel add-in that converts JSON data into Excel spreadsheets. Perfect for integrating API data into Excel for analysis.",
+          "applicationCategory": "Data Conversion",
+          "operatingSystem": "Web"
+        }
+    </script>
+    <meta name="description"
+        content="Excel add-in JSON-to-Excel Convert JSON to Excel within Excel (web online, windows, mac, linux) JSON-to-Excel is a Microsoft Excel add-in which can convert JSON to Excel within Excel. Both flat and nested JSON can be converted using this add-in.
+        This add-in is available at the Microsoft store- Appsource, which can be accessed within Excel, so it does not require any download, a simple click within Excel would run the add-in.">
+    <meta name="keywords"
+        content="excel-to-json, json-to-excel, excel to json, json to excel, json, excel, conversion, mac, windows, transfer, spreadsheets, microsoft, add-in, web, online">
+    <link rel="icon" href="https://t.wtsolutions.cn/favicon.ico">
+
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/examples.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=0a32cc1c"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. 定价" href="pricing.html" />
+    <link rel="prev" title="4. JSON Data and Conversion Settings" href="profeatures.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            JSON-to-Excel
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#json">5.1 有效的JSON示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">5.2 无效的JSON示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">5.3 转换示例</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jsonexcel">JSON转Excel示例</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">输入</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">输出</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">6. 定价</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dependencies.html">Dependencies</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JSON-to-Excel</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">5. 示例</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/examples.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>5. 示例<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://json-to-excel.wtsolutions.cn/en/latest/examples.html">English</a></p>
+<section id="json">
+<h2>5.1 有效的JSON示例<a class="headerlink" href="#json" title="Link to this heading"></a></h2>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="c1">// 简单的扁平对象</span>
+<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">}</span>
+
+<span class="c1">// 简单的扁平对象数组</span>
+<span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jane&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1">// 具有不同属性的对象</span>
+<span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jane&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;New York&quot;</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1">// 具有嵌套结构的对象（使用嵌套JSON模式）</span>
+<span class="c1">// 使用专业功能中的嵌套分隔符设置自定义分隔符（点、下划线、斜杠）</span>
+<span class="c1">// 使用专业功能中的嵌套最大深度设置自定义嵌套对象的最大深度（1到20，或无限制）</span>
+<span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;contact&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john@example.com&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1234567890&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jane&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;contact&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;jane@example.com&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0987654321&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>5.2 无效的JSON示例<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="c1">// 未使用数组包裹</span>
+<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">},{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lily&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">}</span>
+
+<span class="c1">// 空数组</span>
+<span class="p">[]</span>
+
+<span class="c1">// 包含非对象元素的数组</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;c&quot;</span><span class="p">]</span>
+
+<span class="c1">// 包含空对象的数组</span>
+<span class="p">[{}]</span>
+
+<span class="c1">// 包含null的数组</span>
+<span class="p">[</span><span class="kc">null</span><span class="p">]</span>
+
+<span class="c1">// 包含混合类型的数组</span>
+<span class="p">[{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8772217510669640"
+     data-ad-slot="2653271427"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section id="id3">
+<h2>5.3 转换示例<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="jsonexcel">
+<h3>JSON转Excel示例<a class="headerlink" href="#jsonexcel" title="Link to this heading"></a></h3>
+<section id="id4">
+<h4>输入<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;contact&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john@example.com&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1234567890&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jane&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;contact&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;jane@example.com&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0987654321&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h4>输出<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
+<blockquote>
+<div><p>使用平面JSON模式</p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>contact</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>John</p></td>
+<td><p>{“email”:”john&#64;example.com”,”phone”:”1234567890”}</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jane</p></td>
+<td><p>{“email”:”jane&#64;example.com”,”phone”:”0987654321”}</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>使用嵌套JSON模式</p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>contact.email</p></th>
+<th class="head"><p>contact.phone</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>John</p></td>
+<td><p>john&#64;example.com</p></td>
+<td><p>1234567890</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jane</p></td>
+<td><p>jane&#64;example.com</p></td>
+<td><p>987654321</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>使用<a class="reference internal" href="profeatures.html"><span class="std std-doc">专业功能</span></a>中的嵌套分隔符设置自定义分隔符（点、下划线、双下划线、斜杠）</p></li>
+<li><p>使用<a class="reference internal" href="profeatures.html"><span class="std std-doc">专业功能</span></a>中的嵌套最大深度设置自定义嵌套对象的最大深度（1到20，或无限制）</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="profeatures.html" class="btn btn-neutral float-left" title="4. JSON Data and Conversion Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pricing.html" class="btn btn-neutral float-right" title="6. 定价" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, WTSolutions.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
