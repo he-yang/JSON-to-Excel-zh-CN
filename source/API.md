@@ -17,7 +17,7 @@ WTSolutions的JSON-to-Excel是一系列可以将JSON转换为Excel的工具，�
 
 ## 4.2 访问
 
-向访问点 `https://mcp.wtsolutions.cn/json-to-excel-api` 发送`POST`请求，并在请求中包含下面使用部分描述的必要参数。
+向访问点 `https://mcp2.wtsolutions.cn/json-to-excel-api` 发送`POST`请求，并在请求中包含下面使用部分描述的必要参数。
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
