@@ -1,8 +1,8 @@
-# 5. 示例
+# 7. 示例
 
 [English](https://json-to-excel.wtsolutions.cn/en/latest/examples.html)
 
-## 5.1 有效的JSON示例
+## 7.1 有效的JSON示例
 ```json
 // 简单的扁平对象
 {"name": "John", "age": 30}
@@ -40,7 +40,7 @@
 ]
 
 ```
-## 5.2 无效的JSON示例
+## 7.2 无效的JSON示例
 
 ```json
 // 未使用数组包裹
@@ -76,7 +76,7 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-## 5.3 转换示例
+## 7.3 转换示例
 
 ### JSON转Excel示例
 

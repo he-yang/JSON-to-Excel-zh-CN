@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <title>4. API（通过HTTPS POST请求将JSON转换为Excel） &mdash; JSON-to-Excel 3.0.0.0 documentation</title>
+    <!-- 添加自定义的 meta 标签 -->
+     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0f2a07fad68242f78630ddaf8fc89c72"}'></script><!-- End Cloudflare Web Analytics -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "JSON to Excel",
+          "description": "A Microsoft Excel add-in that converts JSON data into Excel spreadsheets. Perfect for integrating API data into Excel for analysis.",
+          "applicationCategory": "Data Conversion",
+          "operatingSystem": "Web"
+        }
+    </script>
+    <meta name="description"
+        content="Excel add-in JSON-to-Excel Convert JSON to Excel within Excel (web online, windows, mac, linux) JSON-to-Excel is a Microsoft Excel add-in which can convert JSON to Excel within Excel. Both flat and nested JSON can be converted using this add-in.
+        This add-in is available at the Microsoft store- Appsource, which can be accessed within Excel, so it does not require any download, a simple click within Excel would run the add-in.">
+    <meta name="keywords"
+        content="excel-to-json, json-to-excel, excel to json, json to excel, json, excel, conversion, mac, windows, transfer, spreadsheets, microsoft, add-in, web, online">
+    <link rel="icon" href="https://t.wtsolutions.cn/favicon.ico">
+
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/API.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=0a32cc1c"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            JSON-to-Excel
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">5. 示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">6. 定价</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dependencies.html">Dependencies</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JSON-to-Excel</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4. API（通过HTTPS POST请求将JSON转换为Excel）</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/API.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-https-postjsonexcel">
+<h1>4. API（通过HTTPS POST请求将JSON转换为Excel）<a class="headerlink" href="#api-https-postjsonexcel" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://json-to-excel.wtsolutions.cn/en/latest/API.html">English</a></p>
+<p>WTSolutions的JSON-to-Excel是一系列可以将JSON转换为Excel的工具，无论是扁平JSON还是嵌套JSON都可以转换。它提供了”将JSON转换为Excel”的全场景解决方案，包括Excel加载项、Web应用程序：</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web应用：直接在Web浏览器中转换JSON到Excel。</span></a></p></li>
+<li><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝协作。</span></a></p></li>
+<li><p><mark>API：通过HTTPS POST请求在API中转换JSON到Excel</mark>（&lt;– 您在此处）</p></li>
+<li><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP服务器：在MCP服务器中转换JSON到Excel</span></a></p></li>
+</ul>
+<section id="id1">
+<h2>4.1 要求<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>需要HTTPS POST请求工具，如Postman、Curl、Python Requests、Javascript fetch等。
+确保通过设置CORS头正确处理CORS问题。</p>
+</section>
+<section id="id2">
+<h2>4.2 访问<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>向访问点 <code class="docutils literal notranslate"><span class="pre">https://mcp.wtsolutions.cn/json-to-excel-api</span></code> 发送<code class="docutils literal notranslate"><span class="pre">POST</span></code>请求，并在请求中包含下面使用部分描述的必要参数。</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8772217510669640"
+     data-ad-slot="2653271427"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<section id="id3">
+<h2>4.3 使用方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>JSON-to-Excel API提供了一种简单的方法将JSON转换为CSV格式。此API接受：</p>
+<ul class="simple">
+<li><p>JSON格式数据</p></li>
+<li><p>指向JSON文件的URL</p></li>
+</ul>
+<section id="id4">
+<h3>4.3.1 请求格式<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>API接受带有<code class="docutils literal notranslate"><span class="pre">application/json</span></code>主体的POST请求，主体包含以下参数之一：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>是否必需</p></th>
+<th class="head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>data</p></td>
+<td><p>字符串</p></td>
+<td><p>否</p></td>
+<td><p>要转换为CSV的JSON数据字符串。必须是有效的JSON数组或对象。</p></td>
+</tr>
+<tr class="row-odd"><td><p>url</p></td>
+<td><p>字符串</p></td>
+<td><p>否</p></td>
+<td><p>指向JSON文件的URL。必须提供’data’或’url’中的一个</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>注意：</p>
+<ul class="simple">
+<li><p>提供’data’或’url’中的一个，不要同时提供。</p></li>
+</ul>
+</div></blockquote>
+<section id="dataurl">
+<h4>对data和url的要求<a class="headerlink" href="#dataurl" title="Link to this heading"></a></h4>
+<p>发送<code class="docutils literal notranslate"><span class="pre">data</span></code>时</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>输入数据必须是有效的JSON字符串。验证器可在<a class="reference external" href="https://s.wtsolutions.cn/json-to-excel.html">JSON到Excel Web应用</a>获取。</p></li>
+<li><p>如果JSON是对象数组，每个对象将被视为CSV中的一行。</p></li>
+<li><p>如果JSON是单个对象，它将被转换为包含键值对的CSV。</p></li>
+<li><p>CSV将包含基于JSON对象中键的标题。</p></li>
+<li><p>此工具返回可轻松转换/导入到Excel的CSV格式数据。</p></li>
+</ul>
+</div></blockquote>
+<p>发送<code class="docutils literal notranslate"><span class="pre">url</span></code>时</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>URL应该是公开可访问的。</p></li>
+<li><p>JSON文件应该是.json格式。</p></li>
+<li><p>JSON文件应包含有效的JSON数组或对象。验证器可在<a class="reference external" href="https://s.wtsolutions.cn/json-to-excel.html">JSON到Excel Web应用</a>获取。</p></li>
+<li><p>如果JSON是对象数组，每个对象将被视为CSV中的一行。</p></li>
+<li><p>如果JSON是单个对象，它将被转换为包含键值对的CSV。</p></li>
+<li><p>此工具返回可轻松转换/导入到Excel的CSV格式数据。</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="id5">
+<h3>4.3.2 响应格式<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>API返回具有以下结构的JSON对象：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>字段</p></th>
+<th class="head"><p>类型</p></th>
+<th class="head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>isError</p></td>
+<td><p>布尔值</p></td>
+<td><p>指示处理请求时是否出错</p></td>
+</tr>
+<tr class="row-odd"><td><p>msg</p></td>
+<td><p>字符串</p></td>
+<td><p>‘success’或错误描述</p></td>
+</tr>
+<tr class="row-even"><td><p>data</p></td>
+<td><p>字符串</p></td>
+<td><p>转换后的CSV数据字符串，如果出错则为空。此CSV数据可轻松导入到Excel。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id6">
+<h3>4.3.3 示例<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<section id="data">
+<h4>使用’data’的请求示例<a class="headerlink" href="#data" title="Link to this heading"></a></h4>
+<p>请求：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[{\&quot;name\&quot;: \&quot;WTSolutions\&quot;, \&quot;age\&quot;: 18},{\&quot;name\&quot;: \&quot;David\&quot;, \&quot;age\&quot;: 20}]&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>响应：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\&quot;name,age\\nWTSolutions,18\\nDavid,20\&quot;&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;isError&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="url">
+<h4>使用’url’的请求示例<a class="headerlink" href="#url" title="Link to this heading"></a></h4>
+<p>请求：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://tools.wtsolutions.cn/example.json&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>响应：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\&quot;name,age\\nWTSolutions,18\\nDavid,20\&quot;&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;isError&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h4>错误响应示例<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">     </span><span class="nt">&quot;isError&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Invalid JSON format&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id8">
+<h3>4.3.4 数据类型处理<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<p>API自动处理JSON中的不同数据类型：</p>
+<ul class="simple">
+<li><p><strong>数字</strong>：转换为CSV中的数值</p></li>
+<li><p><strong>布尔值</strong>：转换为’true’/’false’字符串</p></li>
+<li><p><strong>字符串</strong>：必要时进行转义和引用</p></li>
+<li><p><strong>数组</strong>：转换为JSON.stringify数组字符串</p></li>
+<li><p><strong>对象</strong>：转换为JSON.stringify对象字符串</p></li>
+</ul>
+</section>
+</section>
+<section id="id9">
+<h2>4.5 错误处理<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<p>API为常见问题返回描述性错误消息：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Invalid</span> <span class="pre">JSON</span> <span class="pre">format</span></code>：当输入数据不是有效的JSON字符串时</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">JSON</span> <span class="pre">data</span></code>：当输入数据是空的JSON字符串时</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Network</span> <span class="pre">Error</span> <span class="pre">when</span> <span class="pre">fetching</span> <span class="pre">file</span></code>：当从提供的URL下载文件出错时</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">not</span> <span class="pre">found</span></code>：当找不到提供的URL上的文件时</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Server</span> <span class="pre">Internal</span> <span class="pre">Error</span></code>：当发生意外错误时</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, WTSolutions.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

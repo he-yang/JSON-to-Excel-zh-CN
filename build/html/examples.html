@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-  <title>5. 示例 &mdash; JSON-to-Excel 3.0.0.0 documentation</title>
+  <title>7. 示例 &mdash; JSON-to-Excel 3.0.0.0 documentation</title>
     <!-- 添加自定义的 meta 标签 -->
      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0f2a07fad68242f78630ddaf8fc89c72"}'></script><!-- End Cloudflare Web Analytics -->
     <script type="application/ld+json">
@@ -41,7 +41,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="6. 定价" href="pricing.html" />
-    <link rel="prev" title="4. JSON Data and Conversion Settings" href="profeatures.html" /> 
+    <link rel="prev" title="6. JSON 数据和转换设置" href="profeatures.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -68,11 +68,13 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">5. 示例</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#json">5.1 有效的JSON示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">5.2 无效的JSON示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">5.3 转换示例</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="API.html">4. API（通过HTTPS POST请求将JSON转换为Excel）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP服务器（JSON到Excel MCP服务器）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">6. JSON 数据和转换设置</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#json">7.1 有效的JSON示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">7.2 无效的JSON示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">7.3 转换示例</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#jsonexcel">JSON转Excel示例</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id4">输入</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id5">输出</a></li>
@@ -103,7 +105,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">5. 示例</li>
+      <li class="breadcrumb-item active">7. 示例</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/examples.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -114,10 +116,10 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>5. 示例<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<h1>7. 示例<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://json-to-excel.wtsolutions.cn/en/latest/examples.html">English</a></p>
 <section id="json">
-<h2>5.1 有效的JSON示例<a class="headerlink" href="#json" title="Link to this heading"></a></h2>
+<h2>7.1 有效的JSON示例<a class="headerlink" href="#json" title="Link to this heading"></a></h2>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="c1">// 简单的扁平对象</span>
 <span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">}</span>
 
@@ -156,7 +158,7 @@
 </div>
 </section>
 <section id="id2">
-<h2>5.2 无效的JSON示例<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h2>7.2 无效的JSON示例<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="c1">// 未使用数组包裹</span>
 <span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">},{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lily&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">}</span>
 
@@ -190,7 +192,7 @@
 </script>
 </section>
 <section id="id3">
-<h2>5.3 转换示例<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<h2>7.3 转换示例<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="jsonexcel">
 <h3>JSON转Excel示例<a class="headerlink" href="#jsonexcel" title="Link to this heading"></a></h3>
 <section id="id4">
@@ -268,7 +270,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="profeatures.html" class="btn btn-neutral float-left" title="4. JSON Data and Conversion Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="profeatures.html" class="btn btn-neutral float-left" title="6. JSON 数据和转换设置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="pricing.html" class="btn btn-neutral float-right" title="6. 定价" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

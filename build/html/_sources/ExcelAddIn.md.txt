@@ -5,7 +5,8 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 
 * [Web应用：直接在浏览器中转换JSON到Excel。](WebApp.md)
 * <mark>Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝集成。</mark>(<-- 您当前所在位置)
-
+* [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
+* [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
 
 ## 3.1 系统要求
 
@@ -65,7 +66,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-## 3.5 限制
+## 3.5 限制条件
 - 每次转换最多1000个对象（行）
 - 每个数据集最多100个唯一属性（列）
 - 值中的数组将转换为Excel中的字符串

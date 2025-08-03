@@ -67,9 +67,11 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">5. 示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pricing.html">6. 定价</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">4. API（通过HTTPS POST请求将JSON转换为Excel）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP服务器（JSON到Excel MCP服务器）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">6. JSON 数据和转换设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">7. 示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">8. 定价</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
 <li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
@@ -107,6 +109,8 @@
 <ul class="simple">
 <li><p><a class="reference external" href="WebApp.html">网页应用：直接在浏览器中进行 JSON 转 Excel 操作。</a></p></li>
 <li><p><a class="reference external" href="ExcelAddIn.html">Excel 加载项：在 Excel 环境中实现 JSON 转 Excel，与 Excel 无缝集成。</a></p></li>
+<li><p><a class="reference external" href="API.html">API：通过HTTPS POST请求在API中转换JSON到Excel</a></p></li>
+<li><p><a class="reference external" href="MCP.html">MCP服务器：在MCP服务器中转换JSON到Excel</a></p></li>
 </ul>
 <p>此外，WTSolutions 还提供了 Excel 转 JSON 工具，支持通过网页应用、Excel 加载项、API 和 MCP 服务等方式将 Excel 转换为 JSON。</p>
 <p>更多详情请参考 <a class="reference external" href="https://excel-to-json.wtsolutions.cn/">WTSolutions 出品的 Excel 转 JSON 工具</a>。</p>
@@ -127,24 +131,35 @@
 <li class="toctree-l2"><a class="reference internal" href="ExcelAddIn.html#id2">3.2 获取方式</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ExcelAddIn.html#id4">3.3 使用方法</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ExcelAddIn.html#json">3.4 JSON数据和转换设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ExcelAddIn.html#id5">3.5 限制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExcelAddIn.html#id5">3.5 限制条件</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#json">4.1 JSON数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id8">4.2 转换设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id12">4.3 无广告</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id13">4.4 更多功能</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id14">4.5 专业代码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">4. API（通过HTTPS POST请求将JSON转换为Excel）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="API.html#id1">4.1 要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="API.html#id2">4.2 访问</a></li>
+<li class="toctree-l2"><a class="reference internal" href="API.html#id3">4.3 使用方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="API.html#id9">4.5 错误处理</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">5. 示例</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#json">5.1 有效的JSON示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#id2">5.2 无效的JSON示例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#id3">5.3 转换示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP服务器（JSON到Excel MCP服务器）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MCP.html#id1">文档</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pricing.html">6. 定价</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">6. JSON 数据和转换设置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id1">6.1 JSON数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id9">6.2 转换设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id13">6.3 无广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id14">6.4 更多功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id15">6.5 专业代码</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">7. 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#json">7.1 有效的JSON示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#id2">7.2 无效的JSON示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#id3">7.3 转换示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">8. 定价</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="pricing.html#id2">订阅、付款和取消</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pricing.html#id4">售后服务</a></li>
 </ul>

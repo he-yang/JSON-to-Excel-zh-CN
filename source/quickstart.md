@@ -7,7 +7,8 @@ WTSolutions 推出的 JSON 转 Excel 工具集，可将扁平结构和嵌套结�
 
 * [Web 应用：直接在浏览器中进行 JSON 转 Excel 操作。 ](WebApp.md)
 * [Excel 加载项：在 Excel 环境中实现 JSON 转 Excel，与 Excel 无缝集成。 ](ExcelAddIn.md)
-
+* [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
+* [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
