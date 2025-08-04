@@ -17,7 +17,7 @@ WTSolutions的JSON-to-Excel是一系列可以将JSON转换为Excel的工具，�
 
 ## 4.2 访问
 
-向访问点 `https://mcp.wtsolutions.cn/json-to-excel-api` 发送`POST`请求，并在请求中包含下面使用部分描述的必要参数。
+向访问点 `https://mcp2.wtsolutions.cn/json-to-excel-api` 发送`POST`请求，并在请求中包含下面使用部分描述的必要参数。
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
@@ -53,7 +53,7 @@ API接受带有`application/json`主体的POST请求，主体包含以下参数�
 #### 对data和url的要求
 
 发送`data`时
-> - 输入数据必须是有效的JSON字符串。验证器可在[JSON到Excel Web应用](https://s.wtsolutions.cn/json-to-excel.html)获取。
+> - 输入数据必须是有效的JSON字符串。JSON格式要求可在[JSON格式要求](profeatures.md#id4)获取，验证器可在[JSON到Excel Web应用](https://s.wtsolutions.cn/json-to-excel.html)获取。
 > - 如果JSON是对象数组，每个对象将被视为CSV中的一行。
 > - 如果JSON是单个对象，它将被转换为包含键值对的CSV。
 > - CSV将包含基于JSON对象中键的标题。
@@ -62,7 +62,7 @@ API接受带有`application/json`主体的POST请求，主体包含以下参数�
 发送`url`时
 > - URL应该是公开可访问的。
 > - JSON文件应该是.json格式。
-> - JSON文件应包含有效的JSON数组或对象。验证器可在[JSON到Excel Web应用](https://s.wtsolutions.cn/json-to-excel.html)获取。
+> - JSON文件应包含有效的JSON数组或对象。JSON格式要求可在[JSON格式要求](profeatures.md#id4)获取，验证器可在[JSON到Excel Web应用](https://s.wtsolutions.cn/json-to-excel.html)获取。
 > - 如果JSON是对象数组，每个对象将被视为CSV中的一行。
 > - 如果JSON是单个对象，它将被转换为包含键值对的CSV。
 > - 此工具返回可轻松转换/导入到Excel的CSV格式数据。

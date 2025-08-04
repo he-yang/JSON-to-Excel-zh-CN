@@ -39,7 +39,9 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. MCP服务器（JSON到Excel MCP服务器）" href="MCP.html" />
+    <link rel="prev" title="3. Excel 加载项（JSON转Excel Excel加载项）" href="ExcelAddIn.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -62,13 +64,35 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">5. 示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pricing.html">6. 定价</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. API（通过HTTPS POST请求将JSON转换为Excel）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">4.1 要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">4.2 访问</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">4.3 使用方法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">4.3.1 请求格式</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dataurl">对data和url的要求</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">4.3.2 响应格式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">4.3.3 示例</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#data">使用’data’的请求示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#url">使用’url’的请求示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">错误响应示例</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">4.3.4 数据类型处理</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">4.5 错误处理</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP服务器（JSON到Excel MCP服务器）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">6. JSON 数据和转换设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">7. 示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">8. 定价</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
 <li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
@@ -116,7 +140,7 @@
 </section>
 <section id="id2">
 <h2>4.2 访问<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>向访问点 <code class="docutils literal notranslate"><span class="pre">https://mcp.wtsolutions.cn/json-to-excel-api</span></code> 发送<code class="docutils literal notranslate"><span class="pre">POST</span></code>请求，并在请求中包含下面使用部分描述的必要参数。</p>
+<p>向访问点 <code class="docutils literal notranslate"><span class="pre">https://mcp2.wtsolutions.cn/json-to-excel-api</span></code> 发送<code class="docutils literal notranslate"><span class="pre">POST</span></code>请求，并在请求中包含下面使用部分描述的必要参数。</p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -171,7 +195,7 @@
 <p>发送<code class="docutils literal notranslate"><span class="pre">data</span></code>时</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>输入数据必须是有效的JSON字符串。验证器可在<a class="reference external" href="https://s.wtsolutions.cn/json-to-excel.html">JSON到Excel Web应用</a>获取。</p></li>
+<li><p>输入数据必须是有效的JSON字符串。JSON格式要求可在<a class="reference internal" href="profeatures.html#id4"><span class="std std-ref">JSON格式要求</span></a>获取，验证器可在<a class="reference external" href="https://s.wtsolutions.cn/json-to-excel.html">JSON到Excel Web应用</a>获取。</p></li>
 <li><p>如果JSON是对象数组，每个对象将被视为CSV中的一行。</p></li>
 <li><p>如果JSON是单个对象，它将被转换为包含键值对的CSV。</p></li>
 <li><p>CSV将包含基于JSON对象中键的标题。</p></li>
@@ -183,7 +207,7 @@
 <div><ul class="simple">
 <li><p>URL应该是公开可访问的。</p></li>
 <li><p>JSON文件应该是.json格式。</p></li>
-<li><p>JSON文件应包含有效的JSON数组或对象。验证器可在<a class="reference external" href="https://s.wtsolutions.cn/json-to-excel.html">JSON到Excel Web应用</a>获取。</p></li>
+<li><p>JSON文件应包含有效的JSON数组或对象。JSON格式要求可在<a class="reference internal" href="profeatures.html#id4"><span class="std std-ref">JSON格式要求</span></a>获取，验证器可在<a class="reference external" href="https://s.wtsolutions.cn/json-to-excel.html">JSON到Excel Web应用</a>获取。</p></li>
 <li><p>如果JSON是对象数组，每个对象将被视为CSV中的一行。</p></li>
 <li><p>如果JSON是单个对象，它将被转换为包含键值对的CSV。</p></li>
 <li><p>此工具返回可轻松转换/导入到Excel的CSV格式数据。</p></li>
@@ -288,7 +312,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ExcelAddIn.html" class="btn btn-neutral float-left" title="3. Excel 加载项（JSON转Excel Excel加载项）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="MCP.html" class="btn btn-neutral float-right" title="5. MCP服务器（JSON到Excel MCP服务器）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

@@ -13,10 +13,10 @@ JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专
 加载JSON数据有两种方式：
 - 将JSON数据复制粘贴到文本区域
 - 点击"加载JSON文件"选择器，从本地计算机选择JSON文件进行批量处理[专业功能](pricing.md)，一次最多可加载20个文件
-> 注意，JSON数据必须满足下面[可接受的JSON格式](profeatures.md#id3)部分列出的要求。
+> 注意，JSON数据必须满足下面[可接受的JSON格式](profeatures.md#id4)部分列出的要求。
 
 ### 复制粘贴JSON数据将JSON数据复制粘贴到文本区域，您可以在文本区域下方看到JSON数据预览。
-> 注意，JSON数据必须满足下面[可接受的JSON格式](profeatures.md#id3)部分列出的要求。
+> 注意，JSON数据必须满足下面[可接受的JSON格式](profeatures.md#id4)部分列出的要求。
 
 ### 加载JSON文件
 
@@ -62,9 +62,95 @@ JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专
 
 #### JSON格式规则
 
-- 必须用方括号[]包裹，作为数组
-- 必须包含至少一个对象{}
-- 每个对象必须至少有一个属性
+JSON数据必须符合以下结构之一：
+
+1. **对象数组**：
+   - 必须用方括号 `[]` 包裹
+   - 必须包含 1 到 1000 个条目
+   - 每个条目必须是一个包含 1 到 100 个属性的对象 `{}`
+   - 数组不能包含数组、空值、字符串、数字、布尔值或空对象
+
+2. **单个对象**：
+   - 必须用花括号 `{}` 包裹
+   - 必须包含 1 到 100 个属性
+   - 不能是数组、空值、字符串、数字、布尔值或空对象
+
+所有对象都可以包含架构中定义之外的额外属性。
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "oneOf": [
+    {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "minProperties": 1,
+        "maxProperties": 100,
+        "additionalProperties": true
+      },
+      "not": {
+        "contains": {
+          "anyOf": [
+            {
+              "type": "array"
+            },
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "object",
+              "maxProperties": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 100,
+      "additionalProperties": true,
+      "not": {
+        "anyOf": [
+          {
+            "type": "array"
+          },
+          {
+            "type": "null"
+          },
+          {
+            "type": "string"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "object",
+            "maxProperties": 0
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+
 
 #### 支持的值类型
 
