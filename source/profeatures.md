@@ -10,9 +10,10 @@ JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专
 |:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|❌|❌|
 
-加载JSON数据有两种方式：
+加载JSON数据有三种方式：
 - 将JSON数据复制粘贴到文本区域
 - 点击"加载JSON文件"选择器，从本地计算机选择JSON文件进行批量处理[专业功能](pricing.md)，一次最多可加载20个文件
+- 从Web URL加载JSON文件，进行批量处理[专业功能](pricing.md)，一次最多可加载20个URL
 > 注意，JSON数据必须满足下面[可接受的JSON格式](profeatures.md#id4)部分列出的要求。
 
 ### 复制粘贴JSON数据将JSON数据复制粘贴到文本区域，您可以在文本区域下方看到JSON数据预览。
@@ -33,6 +34,19 @@ JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专
 
 #### 加载JSON文件视频演示
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114549948814092&bvid=BV1T4J7ztE87&cid=30087253525&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+### 从Web URL加载JSON文件
+
+从Web URL加载JSON文件功能允许您将多个JSON文件加载到JSON转Excel中，然后将它们转换为Excel工作表。
+
+每次转换后，将生成一份报告，包括：
+- 所选URL
+- 转换结果（成功或失败）
+- 成功时的工作表名称
+- 失败时的错误消息
+
+> 注意，每次转换最多20个URL。
+> 注意，JSON数据必须满足下面可接受的JSON格式部分列出的要求。
 
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
