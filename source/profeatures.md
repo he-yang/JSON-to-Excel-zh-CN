@@ -48,6 +48,9 @@ JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专
 > 注意，每次转换最多20个URL。
 > 注意，JSON数据必须满足下面可接受的JSON格式部分列出的要求。
 
+#### 从Web URL加载JSON文件视频演示
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114996642060948&bvid=BV1u6tszgEdL&cid=31579504790&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>

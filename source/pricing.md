@@ -20,7 +20,8 @@
 - Excel to JSON [Web App](WebApp.md)
 - Excel to JSON [Excel Addin](ExcelAddIn.md)
 - Excel to JSON [API](API.md)
-- JSON to Excel
+- JSON to Excel Web App
+- JSON to Excel Excel Addin
 
 ### 通过Stripe订阅
 
