@@ -17,11 +17,14 @@
 每个专业代码可支持10台设备访问专业功能。7天试用期结束后，您可以随时取消订阅，这将在当前订阅周期结束时生效。
 
 每个专业代码对WTSolutions提供的Excel转JSON和[JSON转Excel](https://json-to-excel.wtsolutions.cn/en/latest/)均有效，包含：
-- Excel to JSON [Web App](WebApp.md)
-- Excel to JSON [Excel Addin](ExcelAddIn.md)
-- Excel to JSON [API](API.md)
-- JSON to Excel Web App
-- JSON to Excel Excel Addin
+- JSON to Excel [Web App](WebApp.md)
+- JSON to Excel [Excel Addin](ExcelAddIn.md)
+- JSON to Excel [API](API.md)
+- Excel to JSON Web App
+- Excel to JSON Excel Addin
+- Excel to JSON API
+
+
 
 ### 通过Stripe订阅
 
