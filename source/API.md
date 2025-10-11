@@ -183,13 +183,14 @@ API 接受带有 `application/json` 主体的 POST 请求，主体包含以下�
 
 | 属性 | 类型 | 默认值 | 描述 |
 |------|------|--------|------|
-| proCode | 字符串 | "" | 用于自定义转换规则的专业版代码，需要有效的 JSON 转 Excel 服务订阅。这是必需输入项。 |
+| proCode | 字符串 | "" | 用于自定义转换规则的专业版代码，需要有效的 JSON 转 Excel 服务订阅。proCode可以通过options中参数传递，也可以在https请求头中传递proCode。 |
 | jsonMode | 字符串 | “flat” | JSON 输出的格式模式：“nested”（嵌套）或 “flat”（扁平） |
 | delimiter | 字符串 | “.” | 使用 jsonMode: “nested” 时，嵌套 JSON 键的分隔符字符，可接受的分隔符有 “.”、“_”、“__”、“/”。 |
 | maxDepth | 字符串 | "unlimited" | 使用 jsonMode: “nested” 时，嵌套 JSON 对象的最大深度。maxDepth 可接受的值为 "unlimited"、"1" ~ "20"。 |
 
 注意：
 > - proCode 是必需的。如果您没有有效的 [专业版代码](pricing.md)，请参考 4.3 节 使用方法 - 标准版。
+> - proCode 可以通过 options 中参数传递，也可以在 https 请求头中传递 proCode。
 > - 详细的转换规则可在 [专业版功能](profeatures.md) 中找到。
 
 ### 4.4.2 响应格式
