@@ -1,14 +1,14 @@
-# 6. JSON 数据和转换设置
+# 7. JSON 数据和转换设置
 
 [中文](https://json-to-excel.wtsolutions.cn/zh-cn/latest/profeatures.html)
 
 JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专业功能](pricing.md)的规则仅对已订阅工具的用户开放。
 
 
-## 6.1 JSON数据
-||[Web App](WebApp.md)|[Excel Add-in](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|Applicable|✅|✅|❌|❌|
+## 7.1 JSON数据
+||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|Applicable|✅|✅|✅|❌|❌|
 
 加载JSON数据有三种方式：
 - 将JSON数据复制粘贴到文本区域
@@ -186,12 +186,12 @@ JSON数据必须符合以下结构之一：
 
 有关有效和无效的JSON数据示例，请参阅[示例](examples.md)。
 
-## 6.2 转换设置
+## 7.2 转换设置
 
 ### 转换模式
-||[Web App](WebApp.md)|[Excel Add-in](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|Applicable|✅|✅|❌|❌|
+||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|Applicable|✅|✅|✅|❌|❌|
 
 有两种转换模式：平面JSON模式和嵌套JSON模式。有关这两种模式之间的区别，请参阅[示例](examples.md#output)。
 
@@ -205,9 +205,9 @@ JSON数据必须符合以下结构之一：
    - 默认转换无限深度。使用[专业功能](pricing.md)的最大嵌套深度设置自定义嵌套对象的最大深度（1到20，或无限）
 
 ### 嵌套分隔符
-||[Web App](WebApp.md)|[Excel Add-in](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|Applicable|✅|✅|❌|❌|
+||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|Applicable|✅|✅|✅|❌|❌|
 
 嵌套分隔符指定如何处理JSON中的嵌套对象。您可以选择：
 - 点(.) - 默认
@@ -256,9 +256,9 @@ JSON数据必须符合以下结构之一：
 |2|Lily|Jaskson|15|
 
 ### 最大嵌套深度
-||[Web App](WebApp.md)|[Excel Add-in](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|Applicable|✅|✅|❌|❌|
+||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|Applicable|✅|✅|✅|❌|❌|
 
 最大深度设置控制JSON转Excel处理嵌套对象的深度：
 - 默认：无限深度
@@ -309,10 +309,10 @@ Excel输出将如下所示：
 |2|Lily|lily@school.com|098-765-4321|{"street":"456 School Ave","city":"Shanghai"}|
 
 
-## 6.3 无广告
-||[Web App](WebApp.md)|[Excel Add-in](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|Applicable|✅|✅|❌|❌|
+## 7.3 无广告
+||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|Applicable|✅|✅|✅|❌|❌|
 
 如果您拥有有效的JSON转Excel订阅，在使用有效的专业代码成功转换后，您将不会看到广告。
 
@@ -323,11 +323,11 @@ Excel输出将如下所示：
 > 注意，如果您仍然时不时看到广告显示，请尝试使用有效的专业代码进行转换，然后重新启动JSON转Excel。
 
 
-## 6.4 更多功能
+## 7.4 更多功能
 
 如果您已订阅并希望看到更多功能，请发送电子邮件至he.yang@wtsolutions.cn
 
-## 6.5 专业代码
+## 7.5 专业代码
 
 专业代码是您在Stripe或Paddle上购买JSON转Excel时使用的`电子邮件地址`。访问专业功能需要此代码。
 

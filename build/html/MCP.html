@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-  <title>5. MCP服务器（JSON到Excel MCP服务器） &mdash; JSON-to-Excel 3.0.0.0 documentation</title>
+  <title>6. MCP服务器（JSON到Excel MCP服务器） &mdash; JSON-to-Excel 4.0.0.0 documentation</title>
     <!-- 添加自定义的 meta 标签 -->
      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0f2a07fad68242f78630ddaf8fc89c72"}'></script><!-- End Cloudflare Web Analytics -->
     <script type="application/ld+json">
@@ -34,12 +34,14 @@
     <link rel="canonical" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/MCP.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=0a32cc1c"></script>
+      <script src="_static/documentation_options.js?v=7be96676"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. JSON 数据和转换设置" href="profeatures.html" />
+    <link rel="prev" title="5. API（通过HTTPS POST请求将JSON转换为Excel）" href="API.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -62,13 +64,19 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">5. 示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pricing.html">6. 定价</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WPSAddIn.html">4. WPS 加载项（JSON转WPS工作表 WPS加载项）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">5. API（通过HTTPS POST请求将JSON转换为Excel）</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. MCP服务器（JSON到Excel MCP服务器）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">文档</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">7. JSON 数据和转换设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">8. 示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">9. 定价</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
 <li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
@@ -89,7 +97,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">5. MCP服务器（JSON到Excel MCP服务器）</li>
+      <li class="breadcrumb-item active">6. MCP服务器（JSON到Excel MCP服务器）</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/MCP.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -100,12 +108,13 @@
            <div itemprop="articleBody">
              
   <section id="mcp-jsonexcel-mcp">
-<h1>5. MCP服务器（JSON到Excel MCP服务器）<a class="headerlink" href="#mcp-jsonexcel-mcp" title="Link to this heading"></a></h1>
+<h1>6. MCP服务器（JSON到Excel MCP服务器）<a class="headerlink" href="#mcp-jsonexcel-mcp" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://json-to-excel.wtsolutions.cn/en/latest/MCP.html">English</a></p>
 <p>WTSolutions的JSON-to-Excel是一系列可以将JSON转换为Excel的工具，无论是扁平JSON还是嵌套JSON都可以转换。它提供了”将JSON转换为Excel”的全场景解决方案，包括Excel加载项、Web应用程序：</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web应用：直接在Web浏览器中转换JSON到Excel。</span></a></p></li>
 <li><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝协作。</span></a></p></li>
+<li><p><a class="reference internal" href="WPSAddIn.html"><span class="std std-doc">WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。</span></a></p></li>
 <li><p><a class="reference internal" href="API.html"><span class="std std-doc">API：通过HTTPS POST请求在API中转换JSON到Excel</span></a></p></li>
 <li><p><mark>MCP服务器：在MCP服务器中转换JSON到Excel</mark>（&lt;– 您在此处）</p></li>
 </ul>
@@ -118,7 +127,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="API.html" class="btn btn-neutral float-left" title="5. API（通过HTTPS POST请求将JSON转换为Excel）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="profeatures.html" class="btn btn-neutral float-right" title="7. JSON 数据和转换设置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

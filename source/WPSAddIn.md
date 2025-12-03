@@ -1,31 +1,23 @@
-# 3. Excel 加载项（JSON转Excel Excel加载项）
+# 4. WPS 加载项（JSON转WPS工作表 WPS加载项）
 
 
-WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平级和嵌套JSON转换为Excel。它提供了“JSON转Excel”的全场景解决方案，包括Excel加载项、Web应用程序：
+WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平级和嵌套JSON转换为Excel。它提供了“JSON转Excel”的全场景解决方案，包括Excel加载项、Web应用程序、WPS加载项：
 
 * [Web应用：直接在浏览器中转换JSON到Excel。](WebApp.md)
-* <mark>Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝集成。</mark>(<-- 您当前所在位置)
-* [WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。](WPSAddIn.md)
+* [Excel加载项：在Excel中转换JSON为Excel，与Excel环境无缝集成。](ExcelAddIn.md)
+* <mark>WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。</mark>(<-- 您当前所在位置)    
 * [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
 * [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
 
-## 3.1 系统要求
+## 4.1 系统要求
 
-* Excel 2013 Service Pack 1或更高版本，
-* Excel 2016 for Mac，
-* Excel 2016或更高版本，
-* Excel Online，
-* Office 365等。
+* WPS(Windows), 最新版
+* WPS(Linux), 最新版
 
+## 4.2 获取方式
 
-## 3.2 获取方式
-
-* 在Excel 2013/2016、Excel Online或Office 365中打开新的数据表。
-* **主页**选项卡或**插入**选项卡 > 加载项
-* 在搜索框中，输入“JSON to Excel”
-* 按照屏幕上的说明安装加载项，安装完成后，您将在**主页**选项卡上看到带有JSON转Excel图标的“转换”按钮。
-* **主页**选项卡 > JSON转Excel > 转换
-* 现在您已准备好使用此加载项。
+* 获取 WPS 加载项（在 WPS 中旁加载）需要几个步骤
+* 访问 [https://json-to-wps-workbook.wtsolutions.cn/publish.html](https://json-to-wps-workbook.wtsolutions.cn/publish.html) 查看详细步骤。
 
 
 ### 获取加载项的视频指南
@@ -33,7 +25,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 
 
 
-## 3.3 使用方法
+## 4.3 使用方法
 
 * 准备您的JSON数据
 * 在[转换设置](profeatures.md)中，选择转换模式等。
@@ -41,16 +33,18 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
     1. 将JSON数据复制粘贴到文本区域，或
     2. 点击“加载JSON文件”选择器，从本地计算机选择JSON文件进行批量处理[专业功能](pricing.md)，一次最多可加载20个文件。
 * 点击“开始”按钮
-* 您的JSON数据将被转换为Excel，您将看到Excel中新增一个工作表。
+* 您的JSON数据将被转换为WPS工作表，您将看到WPS中新增一个工作表。
 
-### 使用加载项的视频指南（在Excel中旁加载）
+### 使用加载项的视频指南（在WPS中旁加载）
+
+WPS加载项和Excel加载项的使用方法相同，参见Excel加载项的使用演示视频。
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114549948814092&bvid=BV1T4J7ztE87&cid=30087253525&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
-## 3.4 JSON数据和转换设置
+## 4.4 JSON数据和转换设置
 
 有关更多详细信息，请参阅[JSON数据和转换设置](profeatures.md)。
 
@@ -70,5 +64,5 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 ## 3.5 限制条件
 - 每次转换最多1000个对象（行）
 - 每个数据集最多100个唯一属性（列）
-- 值中的数组将转换为Excel中的字符串
+- 值中的数组将转换为WPS工作表中的字符串
 - 一次最多可转换20个加载的本地JSON文件[专业功能](pricing.md)

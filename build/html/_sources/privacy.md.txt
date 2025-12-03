@@ -1,9 +1,10 @@
 # Privacy Policy
 
-**Effective Date:** 2025-6-3
-**Last Revised:** 2025-6-3
+**Effective Date:** 2025-12-04
+**Last Revised:** 2025-12-04
 
-This privacy policy is applicable to JSON to Excel web app, and JSON to Excel Excel add-in.
+
+This privacy policy is applicable to JSON to Excel web app, and JSON to Excel Excel add-in, WPS add-in.
 For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com/he-yang/json-to-excel-api for service agreement.
 
 ## 1. Introduction
@@ -14,7 +15,7 @@ By using the Service, you agree to the terms outlined in this Privacy Policy. If
 
 ## 2. Scope of This Policy
 
-This Privacy Policy applies to the **JSON-to-Excel** Service, which is a **web application** or **Microsoft Excel add-in** that allows users to convert JSON files into Excel format. This policy describes how we handle data processed through the Service.
+This Privacy Policy applies to the **JSON-to-Excel** Service, which is a **web application** , **Microsoft Excel add-in** , and **WPS add-in** that allows users to convert JSON files into Excel format. This policy describes how we handle data processed through the Service.
 
 ## 3. Data We Do Not Collect
 
@@ -22,6 +23,7 @@ We want to assure you that:
 - **We do not store or retain any data** from your JSON files.
 - **We do not transmit your data over the internet**. All data processing occurs 
   - Locally within your Microsoft Excel environment if you side load this application as Microsoft Excel add-in;
+  - Locally within your WPS environment if you side load this application as WPS add-in;
   - Locally within your web browser if you use the Service as a web application.
 - **We do not access, collect, or use any personal or sensitive information** from your JSON files.
 
@@ -29,15 +31,15 @@ We want to assure you that:
 
 For Pro feature subscriptions, we collect and store:
 - Your name and contact information for subscription management purposes.
-- Payment information (processed by our secure payment gateway Stripe)
+- Payment information (processed by our secure payment gateway Stripe or Paddle)
 - Subscription status and billing history
 - Usage data related to Pro features for service improvement, such as Pro Code.
 
 ## 5. How the Service Works
 
-The **JSON-to-Excel** Service operates entirely within your local device, either Microsoft Excel application or web browser. When you use the Service:
+The **JSON-to-Excel** Service operates entirely within your local device, either Microsoft Excel application/WPS or web browser. When you use the Service:
 - Your JSON data is processed locally on your device.
-- The conversion from JSON to Excel is performed within your Microsoft Excel environment or web browser.
+- The conversion from JSON to Excel is performed within your Microsoft Excel environment/WPS or web browser.
 - No data is sent to our servers except as described in Section 4.
 
 ## 6. Third-Party Services
@@ -91,7 +93,7 @@ Google AdSense collects the following information to provide personalized advert
 ## 6. Your Responsibilities
 
 While we take steps to ensure your data remains private, you are responsible for:
-- Ensuring the security of your Microsoft Excel software or web browser, and the device on which you use the Service.
+- Ensuring the security of your Microsoft Excel/WPS software or web browser, and the device on which you use the Service.
 - Managing and protecting any sensitive or confidential data within your JSON files.
 - Complying with applicable data protection laws and regulations.
 

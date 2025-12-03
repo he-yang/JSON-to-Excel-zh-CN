@@ -6,6 +6,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 
 * <mark>Web应用程序：直接在网页浏览器中将JSON转换为Excel。</mark>（<-- 您当前所在位置）
 * [Excel加载项：在Excel中转换JSON为Excel，与Excel环境无缝集成。](ExcelAddIn.md)
+* [WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。](WPSAddIn.md)
 * [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
 * [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
 

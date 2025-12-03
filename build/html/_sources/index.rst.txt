@@ -3,16 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-WTSolutions 出品的 JSON 转 Excel 工具 - 在 Excel 及网页端（支持 Web、Windows、Mac、Linux）实现 JSON 转 Excel
+WTSolutions 出品的 JSON 转 Excel 工具 - 在 Excel,WPS 及网页端（支持 Web、Windows、Mac、Linux）实现 JSON 转 Excel
 ==================================================================================================
 
 `English <https://JSON-to-Excel.wtsolutions.cn/en/latest/>`_
 
 
-WTSolutions 出品的 JSON 转 Excel 工具是一系列能够将 JSON 数据转换为 Excel 文件的工具，支持转换扁平结构和嵌套结构的 JSON 数据。它为 “JSON 转 Excel” 提供了全场景解决方案，包括 Excel 加载项和网页应用：
+WTSolutions 出品的 JSON 转 Excel 工具是一系列能够将 JSON 数据转换为 Excel 文件的工具，支持转换扁平结构和嵌套结构的 JSON 数据。它为 “JSON 转 Excel” 提供了全场景解决方案，包括 Excel 加载项, WPS加载项和网页应用：
 
 * `网页应用：直接在浏览器中进行 JSON 转 Excel 操作。 <WebApp.html>`_
 * `Excel 加载项：在 Excel 环境中实现 JSON 转 Excel，与 Excel 无缝集成。 <ExcelAddIn.html>`_
+* `WPS 加载项：在 WPS 环境中实现 JSON 转 Excel，与 WPS 无缝集成。 <WPSAddIn.html>`_
 * `API：通过HTTPS POST请求在API中转换JSON到Excel <API.html>`_
 * `MCP服务器：在MCP服务器中转换JSON到Excel <MCP.html>`_
 
@@ -28,6 +29,7 @@ WTSolutions 出品的 JSON 转 Excel 工具是一系列能够将 JSON 数据转�
    quickstart.md
    WebApp.md
    ExcelAddIn.md
+   WPSAddIn.md
    API.md
    MCP.md
    profeatures.md

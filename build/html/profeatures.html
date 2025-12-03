@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-  <title>6. JSON 数据和转换设置 &mdash; JSON-to-Excel 3.0.0.0 documentation</title>
+  <title>7. JSON 数据和转换设置 &mdash; JSON-to-Excel 4.0.0.0 documentation</title>
     <!-- 添加自定义的 meta 标签 -->
      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0f2a07fad68242f78630ddaf8fc89c72"}'></script><!-- End Cloudflare Web Analytics -->
     <script type="application/ld+json">
@@ -34,14 +34,14 @@
     <link rel="canonical" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/profeatures.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=0a32cc1c"></script>
+      <script src="_static/documentation_options.js?v=7be96676"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="7. 示例" href="examples.html" />
-    <link rel="prev" title="5. MCP服务器（JSON到Excel MCP服务器）" href="MCP.html" /> 
+    <link rel="next" title="8. 示例" href="examples.html" />
+    <link rel="prev" title="6. MCP服务器（JSON到Excel MCP服务器）" href="MCP.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -68,38 +68,42 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="API.html">4. API（通过HTTPS POST请求将JSON转换为Excel）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP服务器（JSON到Excel MCP服务器）</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">6. JSON 数据和转换设置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">6.1 JSON数据</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="WPSAddIn.html">4. WPS 加载项（JSON转WPS工作表 WPS加载项）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">5. API（通过HTTPS POST请求将JSON转换为Excel）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">6. MCP服务器（JSON到Excel MCP服务器）</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. JSON 数据和转换设置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">7.1 JSON数据</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#jsonjson-json">复制粘贴JSON数据将JSON数据复制粘贴到文本区域，您可以在文本区域下方看到JSON数据预览。</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">加载JSON文件</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id3">加载JSON文件视频演示</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#web-urljson">从Web URL加载JSON文件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">可接受的JSON格式</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id5">必需格式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id6">JSON格式规则</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id7">支持的值类型</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#web-urljson">从Web URL加载JSON文件</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">从Web URL加载JSON文件视频演示</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">有效和无效的JSON数据示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">可接受的JSON格式</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">必需格式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">JSON格式规则</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">支持的值类型</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">6.2 转换设置</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id10">转换模式</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">嵌套分隔符</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id12">最大嵌套深度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">有效和无效的JSON数据示例</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id13">6.3 无广告</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id14">6.4 更多功能</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id15">6.5 专业代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">7.2 转换设置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">转换模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">嵌套分隔符</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">最大嵌套深度</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">7. 示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pricing.html">8. 定价</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">7.3 无广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">7.4 更多功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">7.5 专业代码</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">8. 示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">9. 定价</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
 <li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
@@ -120,7 +124,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">6. JSON 数据和转换设置</li>
+      <li class="breadcrumb-item active">7. JSON 数据和转换设置</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/profeatures.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -131,22 +135,24 @@
            <div itemprop="articleBody">
              
   <section id="json">
-<h1>6. JSON 数据和转换设置<a class="headerlink" href="#json" title="Link to this heading"></a></h1>
+<h1>7. JSON 数据和转换设置<a class="headerlink" href="#json" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/profeatures.html">中文</a></p>
 <p>JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为<a class="reference internal" href="pricing.html"><span class="std std-doc">专业功能</span></a>的规则仅对已订阅工具的用户开放。</p>
 <section id="id1">
-<h2>6.1 JSON数据<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<h2>7.1 JSON数据<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p></p></th>
 <th class="head text-center"><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web App</span></a></p></th>
-<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel Add-in</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel 加载项</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="WPSAddIn.html"><span class="std std-doc">WPS 加载项</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="API.html"><span class="std std-doc">API</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP</span></a></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>Applicable</p></td>
+<td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>❌</p></td>
@@ -202,6 +208,9 @@
 <div><p>注意，每次转换最多20个URL。
 注意，JSON数据必须满足下面可接受的JSON格式部分列出的要求。</p>
 </div></blockquote>
+<section id="id4">
+<h4>从Web URL加载JSON文件视频演示<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114996642060948&bvid=BV1u6tszgEdL&cid=31579504790&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -214,10 +223,11 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </section>
-<section id="id4">
-<h3>可接受的JSON格式<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+</section>
 <section id="id5">
-<h4>必需格式<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
+<h3>可接受的JSON格式<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<section id="id6">
+<h4>必需格式<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <p>输入必须是包含对象的有效JSON数组。数组中的每个对象代表Excel输出中的一行。</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span><span class="nt">&quot;property1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;property2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span><span class="p">},</span>
@@ -226,8 +236,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id6">
-<h4>JSON格式规则<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
+<section id="id7">
+<h4>JSON格式规则<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <p>JSON数据必须符合以下结构之一：</p>
 <ol class="arabic simple">
 <li><p><strong>对象数组</strong>：</p>
@@ -320,8 +330,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id7">
-<h4>支持的值类型<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
+<section id="id8">
+<h4>支持的值类型<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>字符串: “text”</p></li>
 <li><p>数字: 123 , 45.67</p></li>
@@ -345,26 +355,28 @@
 </ul>
 </section>
 </section>
-<section id="id8">
-<h3>有效和无效的JSON数据示例<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<section id="id9">
+<h3>有效和无效的JSON数据示例<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>有关有效和无效的JSON数据示例，请参阅<a class="reference internal" href="examples.html"><span class="std std-doc">示例</span></a>。</p>
 </section>
 </section>
-<section id="id9">
-<h2>6.2 转换设置<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <section id="id10">
-<h3>转换模式<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<h2>7.2 转换设置<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<section id="id11">
+<h3>转换模式<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p></p></th>
 <th class="head text-center"><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web App</span></a></p></th>
-<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel Add-in</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel 加载项</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="WPSAddIn.html"><span class="std std-doc">WPS 加载项</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="API.html"><span class="std std-doc">API</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP</span></a></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>Applicable</p></td>
+<td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>❌</p></td>
@@ -389,19 +401,21 @@
 </li>
 </ul>
 </section>
-<section id="id11">
-<h3>嵌套分隔符<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<section id="id12">
+<h3>嵌套分隔符<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p></p></th>
 <th class="head text-center"><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web App</span></a></p></th>
-<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel Add-in</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel 加载项</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="WPSAddIn.html"><span class="std std-doc">WPS 加载项</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="API.html"><span class="std std-doc">API</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP</span></a></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>Applicable</p></td>
+<td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>❌</p></td>
@@ -502,19 +516,21 @@
 </tbody>
 </table>
 </section>
-<section id="id12">
-<h3>最大嵌套深度<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<section id="id13">
+<h3>最大嵌套深度<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p></p></th>
 <th class="head text-center"><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web App</span></a></p></th>
-<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel Add-in</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel 加载项</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="WPSAddIn.html"><span class="std std-doc">WPS 加载项</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="API.html"><span class="std std-doc">API</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP</span></a></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>Applicable</p></td>
+<td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>❌</p></td>
@@ -589,19 +605,21 @@
 </table>
 </section>
 </section>
-<section id="id13">
-<h2>6.3 无广告<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<section id="id14">
+<h2>7.3 无广告<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p></p></th>
 <th class="head text-center"><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web App</span></a></p></th>
-<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel Add-in</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel 加载项</span></a></p></th>
+<th class="head text-center"><p><a class="reference internal" href="WPSAddIn.html"><span class="std std-doc">WPS 加载项</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="API.html"><span class="std std-doc">API</span></a></p></th>
 <th class="head text-center"><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP</span></a></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>Applicable</p></td>
+<td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>❌</p></td>
@@ -616,12 +634,12 @@
 <div><p>注意，如果您仍然时不时看到广告显示，请尝试使用有效的专业代码进行转换，然后重新启动JSON转Excel。</p>
 </div></blockquote>
 </section>
-<section id="id14">
-<h2>6.4 更多功能<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<section id="id15">
+<h2>7.4 更多功能<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
 <p>如果您已订阅并希望看到更多功能，请发送电子邮件至he.yang&#64;wtsolutions.cn</p>
 </section>
-<section id="id15">
-<h2>6.5 专业代码<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
+<section id="id16">
+<h2>7.5 专业代码<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
 <p>专业代码是您在Stripe或Paddle上购买JSON转Excel时使用的<code class="docutils literal notranslate"><span class="pre">电子邮件地址</span></code>。访问专业功能需要此代码。</p>
 </section>
 </section>
@@ -630,8 +648,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="MCP.html" class="btn btn-neutral float-left" title="5. MCP服务器（JSON到Excel MCP服务器）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="examples.html" class="btn btn-neutral float-right" title="7. 示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="MCP.html" class="btn btn-neutral float-left" title="6. MCP服务器（JSON到Excel MCP服务器）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="examples.html" class="btn btn-neutral float-right" title="8. 示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

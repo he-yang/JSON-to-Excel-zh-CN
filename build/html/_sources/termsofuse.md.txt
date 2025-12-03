@@ -1,8 +1,8 @@
 # Service Agreement
 
-**Effective Date:** 2025-6-3
+**Effective Date:** 2025-12-04
 
-This service agreement is applicable to JSON to Excel web app, and JSON to Excel Excel add-in.
+This service agreement is applicable to JSON to Excel web app, and JSON to Excel Excel add-in and WPS add-in.
 For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com/he-yang/json-to-excel-api for service agreement.
 
 ## 1. Introduction
@@ -11,13 +11,13 @@ Welcome to the JSON-to-Excel service ("Service"). This Service Agreement ("Agree
 
 ## 2. Description of Service
 
-The JSON-to-Excel Service is a Microsoft Excel add-in or web application that allows users to convert JSON files into Excel format within Excel. The Service is designed to facilitate the conversion of data from JSON format into Excel spreadsheets, which can be used for data analysis, reporting, and other purposes. For the Pro features, a paid subscription is required.
+The JSON-to-Excel Service is a Microsoft Excel add-in, WPS add-in or web application that allows users to convert JSON files into Excel format within Excel/WPS. The Service is designed to facilitate the conversion of data from JSON format into Excel spreadsheets/WPS workbook, which can be used for data analysis, reporting, and other purposes. For the Pro features, a paid subscription is required.
 
 ## 3. User Requirements
 
 To use the JSON-to-Excel Service, you must:
-- Have a valid and licensed copy of Microsoft Excel installed on your computer if you choose to side-load this service within Excel environment.
-- Ensure that your version of Microsoft Excel is compatible with the JSON-to-Excel add-in if you choose to side-load this service within Excel environment.
+- Have a valid and licensed copy of Microsoft Excel or WPS installed on your computer if you choose to side-load this service within Excel/WPS environment.
+- Ensure that your version of Microsoft Excel or WPS is compatible with the JSON-to-Excel add-in if you choose to side-load this service within Excel/WPS environment.
 - Provide accurate and complete information when registering for or using the Service.
 
 ## 4. License and Restrictions
@@ -49,7 +49,7 @@ You are solely responsible for:
 
 ## 7. Data Privacy
 
-We are committed to protecting your privacy. Any JSON data you process through the JSON-to-Excel Service will not be stored, shared, or used by us for any purpose other than providing the Service. For subscription management, we collect and store necessary billing information in accordance with our Privacy Policy.  However, you acknowledge that when the Service operates within the Microsoft Excel environment, you are responsible for understanding and managing the privacy settings of your Excel software.
+We are committed to protecting your privacy. Any JSON data you process through the JSON-to-Excel Service will not be stored, shared, or used by us for any purpose other than providing the Service. For subscription management, we collect and store necessary billing information in accordance with our Privacy Policy.  However, you acknowledge that when the Service operates within the Microsoft Excel/WPS environment, you are responsible for understanding and managing the privacy settings of your Excel/WPS software.
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@ We are committed to protecting your privacy. Any JSON data you process through t
 
 ## 8. Disclaimer of Warranties
 
-The JSON-to-Excel Service is provided "as is" and "as available" without any warranties of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee that the Service will be error-free, uninterrupted, or compatible with all versions of Microsoft Excel.
+The JSON-to-Excel Service is provided "as is" and "as available" without any warranties of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee that the Service will be error-free, uninterrupted, or compatible with all versions of Microsoft Excel/WPS.
 
 ## 9. Limitation of Liability
 

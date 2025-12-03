@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-  <title>Privacy Policy &mdash; JSON-to-Excel 3.0.0.0 documentation</title>
+  <title>Privacy Policy &mdash; JSON-to-Excel 4.0.0.0 documentation</title>
     <!-- 添加自定义的 meta 标签 -->
      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0f2a07fad68242f78630ddaf8fc89c72"}'></script><!-- End Cloudflare Web Analytics -->
     <script type="application/ld+json">
@@ -34,7 +34,7 @@
     <link rel="canonical" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/privacy.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=0a32cc1c"></script>
+      <script src="_static/documentation_options.js?v=7be96676"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -68,9 +68,12 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">4. JSON Data and Conversion Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">5. 示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pricing.html">6. 定价</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WPSAddIn.html">4. WPS 加载项（JSON转WPS工作表 WPS加载项）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">5. API（通过HTTPS POST请求将JSON转换为Excel）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">6. MCP服务器（JSON到Excel MCP服务器）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">7. JSON 数据和转换设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">8. 示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">9. 定价</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系我们</a></li>
 <li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Privacy Policy</a><ul>
@@ -120,9 +123,9 @@
              
   <section id="privacy-policy">
 <h1>Privacy Policy<a class="headerlink" href="#privacy-policy" title="Link to this heading"></a></h1>
-<p><strong>Effective Date:</strong> 2025-6-3
-<strong>Last Revised:</strong> 2025-6-3</p>
-<p>This privacy policy is applicable to JSON to Excel web app, and JSON to Excel Excel add-in.
+<p><strong>Effective Date:</strong> 2025-12-04
+<strong>Last Revised:</strong> 2025-12-04</p>
+<p>This privacy policy is applicable to JSON to Excel web app, and JSON to Excel Excel add-in, WPS add-in.
 For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com/he-yang/json-to-excel-api for service agreement.</p>
 <section id="introduction">
 <h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
@@ -131,7 +134,7 @@ For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com
 </section>
 <section id="scope-of-this-policy">
 <h2>2. Scope of This Policy<a class="headerlink" href="#scope-of-this-policy" title="Link to this heading"></a></h2>
-<p>This Privacy Policy applies to the <strong>JSON-to-Excel</strong> Service, which is a <strong>web application</strong> or <strong>Microsoft Excel add-in</strong> that allows users to convert JSON files into Excel format. This policy describes how we handle data processed through the Service.</p>
+<p>This Privacy Policy applies to the <strong>JSON-to-Excel</strong> Service, which is a <strong>web application</strong> , <strong>Microsoft Excel add-in</strong> , and <strong>WPS add-in</strong> that allows users to convert JSON files into Excel format. This policy describes how we handle data processed through the Service.</p>
 </section>
 <section id="data-we-do-not-collect">
 <h2>3. Data We Do Not Collect<a class="headerlink" href="#data-we-do-not-collect" title="Link to this heading"></a></h2>
@@ -141,6 +144,7 @@ For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com
 <li><p><strong>We do not transmit your data over the internet</strong>. All data processing occurs</p>
 <ul>
 <li><p>Locally within your Microsoft Excel environment if you side load this application as Microsoft Excel add-in;</p></li>
+<li><p>Locally within your WPS environment if you side load this application as WPS add-in;</p></li>
 <li><p>Locally within your web browser if you use the Service as a web application.</p></li>
 </ul>
 </li>
@@ -152,17 +156,17 @@ For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com
 <p>For Pro feature subscriptions, we collect and store:</p>
 <ul class="simple">
 <li><p>Your name and contact information for subscription management purposes.</p></li>
-<li><p>Payment information (processed by our secure payment gateway Stripe)</p></li>
+<li><p>Payment information (processed by our secure payment gateway Stripe or Paddle)</p></li>
 <li><p>Subscription status and billing history</p></li>
 <li><p>Usage data related to Pro features for service improvement, such as Pro Code.</p></li>
 </ul>
 </section>
 <section id="how-the-service-works">
 <h2>5. How the Service Works<a class="headerlink" href="#how-the-service-works" title="Link to this heading"></a></h2>
-<p>The <strong>JSON-to-Excel</strong> Service operates entirely within your local device, either Microsoft Excel application or web browser. When you use the Service:</p>
+<p>The <strong>JSON-to-Excel</strong> Service operates entirely within your local device, either Microsoft Excel application/WPS or web browser. When you use the Service:</p>
 <ul class="simple">
 <li><p>Your JSON data is processed locally on your device.</p></li>
-<li><p>The conversion from JSON to Excel is performed within your Microsoft Excel environment or web browser.</p></li>
+<li><p>The conversion from JSON to Excel is performed within your Microsoft Excel environment/WPS or web browser.</p></li>
 <li><p>No data is sent to our servers except as described in Section 4.</p></li>
 </ul>
 </section>
@@ -226,7 +230,7 @@ For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com
 <h2>6. Your Responsibilities<a class="headerlink" href="#your-responsibilities" title="Link to this heading"></a></h2>
 <p>While we take steps to ensure your data remains private, you are responsible for:</p>
 <ul class="simple">
-<li><p>Ensuring the security of your Microsoft Excel software or web browser, and the device on which you use the Service.</p></li>
+<li><p>Ensuring the security of your Microsoft Excel/WPS software or web browser, and the device on which you use the Service.</p></li>
 <li><p>Managing and protecting any sensitive or confidential data within your JSON files.</p></li>
 <li><p>Complying with applicable data protection laws and regulations.</p></li>
 </ul>

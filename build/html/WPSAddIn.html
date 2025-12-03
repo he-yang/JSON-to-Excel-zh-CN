@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-  <title>2. Web应用程序（JSON-to-Excel Web应用程序） &mdash; JSON-to-Excel 4.0.0.0 documentation</title>
+  <title>4. WPS 加载项（JSON转WPS工作表 WPS加载项） &mdash; JSON-to-Excel 4.0.0.0 documentation</title>
     <!-- 添加自定义的 meta 标签 -->
      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0f2a07fad68242f78630ddaf8fc89c72"}'></script><!-- End Cloudflare Web Analytics -->
     <script type="application/ld+json">
@@ -31,7 +31,7 @@
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
-    <link rel="canonical" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/WebApp.html" />
+    <link rel="canonical" href="https://json-to-excel.wtsolutions.cn/zh-cn/latest/WPSAddIn.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=7be96676"></script>
@@ -40,8 +40,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="3. Excel 加载项（JSON转Excel Excel加载项）" href="ExcelAddIn.html" />
-    <link rel="prev" title="1. 简介" href="quickstart.html" /> 
+    <link rel="next" title="5. API（通过HTTPS POST请求将JSON转换为Excel）" href="API.html" />
+    <link rel="prev" title="3. Excel 加载项（JSON转Excel Excel加载项）" href="ExcelAddIn.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -66,16 +66,22 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">1. 简介</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Web应用程序（JSON-to-Excel Web应用程序）</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">2.1 系统要求</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">2.2 访问方式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">2.3 使用方法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#json">2.4 JSON数据和转换设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">2.5 限制条件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web应用程序（JSON-to-Excel Web应用程序）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. WPS 加载项（JSON转WPS工作表 WPS加载项）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">4.1 系统要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">4.2 获取方式</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">获取加载项的视频指南</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（JSON转Excel Excel加载项）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="WPSAddIn.html">4. WPS 加载项（JSON转WPS工作表 WPS加载项）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">4.3 使用方法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wps">使用加载项的视频指南（在WPS中旁加载）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#json">4.4 JSON数据和转换设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.5 限制条件</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="API.html">5. API（通过HTTPS POST请求将JSON转换为Excel）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MCP.html">6. MCP服务器（JSON到Excel MCP服务器）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="profeatures.html">7. JSON 数据和转换设置</a></li>
@@ -101,9 +107,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">2. Web应用程序（JSON-to-Excel Web应用程序）</li>
+      <li class="breadcrumb-item active">4. WPS 加载项（JSON转WPS工作表 WPS加载项）</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/WebApp.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/WPSAddIn.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -111,30 +117,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="web-json-to-excel-web">
-<h1>2. Web应用程序（JSON-to-Excel Web应用程序）<a class="headerlink" href="#web-json-to-excel-web" title="Link to this heading"></a></h1>
-<p><a class="reference external" href="https://json-to-excel.wtsolutions.cn/en/latest/WebApp.html">English</a></p>
-<p>WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平面JSON和嵌套JSON转换为Excel。它提供了”JSON转Excel”的全场景解决方案，包括Excel加载项和Web应用程序：</p>
+  <section id="wps-jsonwps-wps">
+<h1>4. WPS 加载项（JSON转WPS工作表 WPS加载项）<a class="headerlink" href="#wps-jsonwps-wps" title="Link to this heading"></a></h1>
+<p>WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平级和嵌套JSON转换为Excel。它提供了“JSON转Excel”的全场景解决方案，包括Excel加载项、Web应用程序、WPS加载项：</p>
 <ul class="simple">
-<li><p><mark>Web应用程序：直接在网页浏览器中将JSON转换为Excel。</mark>（&lt;– 您当前所在位置）</p></li>
+<li><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web应用：直接在浏览器中转换JSON到Excel。</span></a></p></li>
 <li><p><a class="reference internal" href="ExcelAddIn.html"><span class="std std-doc">Excel加载项：在Excel中转换JSON为Excel，与Excel环境无缝集成。</span></a></p></li>
-<li><p><a class="reference internal" href="WPSAddIn.html"><span class="std std-doc">WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。</span></a></p></li>
+<li><p><mark>WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。</mark>(&lt;– 您当前所在位置)</p></li>
 <li><p><a class="reference internal" href="API.html"><span class="std std-doc">API：通过HTTPS POST请求在API中转换JSON到Excel</span></a></p></li>
 <li><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP服务器：在MCP服务器中转换JSON到Excel</span></a></p></li>
 </ul>
 <section id="id1">
-<h2>2.1 系统要求<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<h2>4.1 系统要求<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>支持JavaScript的网页浏览器，例如Google Chrome、Mozilla Firefox、Safari或Microsoft Edge等。</p></li>
-<li><p>适用于Windows、Mac、Linux、Android、iOS等系统的浏览器。</p></li>
+<li><p>WPS(Windows), 最新版</p></li>
+<li><p>WPS(Linux), 最新版</p></li>
 </ul>
 </section>
 <section id="id2">
-<h2>2.2 访问方式<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h2>4.2 获取方式<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>打开支持JavaScript的网页浏览器，例如Google Chrome、Mozilla Firefox、Safari或Microsoft Edge等。</p></li>
-<li><p>在网页浏览器中打开以下URL：<a href="https://s.wtsolutions.cn/json-to-excel.html" target="_blank">https://s.wtsolutions.cn/json-to-excel.html</a></p></li>
+<li><p>获取 WPS 加载项（在 WPS 中旁加载）需要几个步骤</p></li>
+<li><p>访问 <a class="reference external" href="https://json-to-wps-workbook.wtsolutions.cn/publish.html">https://json-to-wps-workbook.wtsolutions.cn/publish.html</a> 查看详细步骤。</p></li>
 </ul>
+<section id="id3">
+<h3>获取加载项的视频指南<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</section>
+</section>
+<section id="id4">
+<h2>4.3 使用方法<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>准备您的JSON数据</p></li>
+<li><p>在<a class="reference internal" href="profeatures.html"><span class="std std-doc">转换设置</span></a>中，选择转换模式等。</p></li>
+<li><p>加载您的JSON数据（选择以下两种方式之一）</p>
+<ol class="arabic simple">
+<li><p>将JSON数据复制粘贴到文本区域，或</p></li>
+<li><p>点击“加载JSON文件”选择器，从本地计算机选择JSON文件进行批量处理<a class="reference internal" href="pricing.html"><span class="std std-doc">专业功能</span></a>，一次最多可加载20个文件。</p></li>
+</ol>
+</li>
+<li><p>点击“开始”按钮</p></li>
+<li><p>您的JSON数据将被转换为WPS工作表，您将看到WPS中新增一个工作表。</p></li>
+</ul>
+<section id="wps">
+<h3>使用加载项的视频指南（在WPS中旁加载）<a class="headerlink" href="#wps" title="Link to this heading"></a></h3>
+<p>WPS加载项和Excel加载项的使用方法相同，参见Excel加载项的使用演示视频。</p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114549948814092&bvid=BV1T4J7ztE87&cid=30087253525&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</section>
+</section>
+<section id="json">
+<h2>4.4 JSON数据和转换设置<a class="headerlink" href="#json" title="Link to this heading"></a></h2>
+<p>有关更多详细信息，请参阅<a class="reference internal" href="profeatures.html"><span class="std std-doc">JSON数据和转换设置</span></a>。</p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -147,32 +181,12 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </section>
-<section id="id3">
-<h2>2.3 使用方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<ul class="simple">
-<li><p>准备您的JSON数据</p></li>
-<li><p>在<a class="reference internal" href="profeatures.html"><span class="std std-doc">转换设置</span></a>中，选择转换模式等选项</p></li>
-<li><p>加载您的JSON数据（选择以下两种方式之一）</p>
-<ol class="arabic simple">
-<li><p>将JSON数据复制粘贴到文本区域，或</p></li>
-<li><p>点击”加载JSON文件”选择器，从本地计算机选择JSON文件进行批量处理<a class="reference internal" href="pricing.html"><span class="std std-doc">专业功能</span></a>，一次最多可加载20个文件</p></li>
-</ol>
-</li>
-<li><p>点击”开始”按钮</p></li>
-<li><p>您的JSON数据将被转换为Excel，您可以在页面底部看到Excel预览</p></li>
-<li><p>点击”下载”按钮即可下载Excel文件</p></li>
-</ul>
-</section>
-<section id="json">
-<h2>2.4 JSON数据和转换设置<a class="headerlink" href="#json" title="Link to this heading"></a></h2>
-<p>有关更多详细信息，请参阅<a class="reference internal" href="profeatures.html"><span class="std std-doc">JSON数据和转换设置</span></a>。</p>
-</section>
-<section id="id4">
-<h2>2.5 限制条件<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<section id="id5">
+<h2>3.5 限制条件<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>每次转换最多1000个对象（行）</p></li>
 <li><p>每个数据集最多100个唯一属性（列）</p></li>
-<li><p>值中的数组将在Excel中转换为字符串</p></li>
+<li><p>值中的数组将转换为WPS工作表中的字符串</p></li>
 <li><p>一次最多可转换20个加载的本地JSON文件<a class="reference internal" href="pricing.html"><span class="std std-doc">专业功能</span></a></p></li>
 </ul>
 </section>
@@ -182,8 +196,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="quickstart.html" class="btn btn-neutral float-left" title="1. 简介" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ExcelAddIn.html" class="btn btn-neutral float-right" title="3. Excel 加载项（JSON转Excel Excel加载项）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ExcelAddIn.html" class="btn btn-neutral float-left" title="3. Excel 加载项（JSON转Excel Excel加载项）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="API.html" class="btn btn-neutral float-right" title="5. API（通过HTTPS POST请求将JSON转换为Excel）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
