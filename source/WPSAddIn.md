@@ -1,5 +1,5 @@
 # 4. WPS 加载项（JSON转WPS工作表 WPS加载项）
-
+[English](https://json-to-excel.wtsolutions.cn/en/latest/WPSAddIn.html)
 
 WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平级和嵌套JSON转换为Excel。它提供了“JSON转Excel”的全场景解决方案，包括Excel加载项、Web应用程序、WPS加载项：
 
@@ -21,6 +21,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 
 
 ### 获取加载项的视频指南
+
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 
@@ -43,6 +44,9 @@ WPS加载项和Excel加载项的使用方法相同，参见Excel加载项的使�
 
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115658553562052&bvid=BV1Ky2hB2EfB&cid=34486682667&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ## 4.4 JSON数据和转换设置
 

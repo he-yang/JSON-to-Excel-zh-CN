@@ -1,5 +1,6 @@
 # 3. Excel 加载项（JSON转Excel Excel加载项）
 
+[English](https://json-to-excel.wtsolutions.cn/en/latest/ExcelAddIn.html)
 
 WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平级和嵌套JSON转换为Excel。它提供了“JSON转Excel”的全场景解决方案，包括Excel加载项、Web应用程序：
 
