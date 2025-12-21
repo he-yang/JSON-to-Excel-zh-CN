@@ -35,6 +35,10 @@ JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专
 #### 加载JSON文件视频演示
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114549948814092&bvid=BV1T4J7ztE87&cid=30087253525&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
+
+
+
 ### 从Web URL加载JSON文件
 
 从Web URL加载JSON文件功能允许您将多个JSON文件加载到JSON转Excel中，然后将它们转换为Excel工作表。
@@ -50,6 +54,9 @@ JSON-to-Excel提供了一系列增强功能的专业特性。这些标记为[专
 
 #### 从Web URL加载JSON文件视频演示
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114996642060948&bvid=BV1u6tszgEdL&cid=31579504790&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
+
 
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"

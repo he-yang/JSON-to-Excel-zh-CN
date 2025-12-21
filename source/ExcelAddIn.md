@@ -32,6 +32,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 ### 获取加载项的视频指南
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
 
 
 ## 3.3 使用方法
