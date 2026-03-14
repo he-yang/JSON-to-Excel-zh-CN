@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://json-to-excel.wtsolutions.cn/en/latest/sitemap.xml
+Sitemap: https://json-to-excel.wtsolutions.cn/zh-cn/latest/sitemap.xml
