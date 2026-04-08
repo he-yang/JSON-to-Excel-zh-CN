@@ -1,16 +1,21 @@
-# 3. Excel 加载项（JSON转Excel Excel加载项）
+# Excel 加载项（JSON转Excel Excel加载项）
 
 [English](https://json-to-excel.wtsolutions.cn/en/latest/ExcelAddIn.html)
 
 WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平级和嵌套JSON转换为Excel。它提供了“JSON转Excel”的全场景解决方案，包括Excel加载项、Web应用程序：
 
-* [Web应用：直接在浏览器中转换JSON到Excel。](WebApp.md)
-* <mark>Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝集成。</mark>(<-- 您当前所在位置)
-* [WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。](WPSAddIn.md)
-* [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
-* [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
+* 网络版方案
+     * [Web应用：直接在浏览器中转换JSON到Excel。](WebApp.md)
+     * <mark>Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝集成。</mark>(<-- 您当前所在位置)
+     * [WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。](WPSAddIn.md)
+     * [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
+* 本地化方案
+     * [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
+     * 本地化应用，即将发布
+     * 本地化Excel加载项，即将发布
+     * 本地化WPS加载项，即将发布
 
-## 3.1 系统要求
+## 系统要求
 
 * Excel 2013 Service Pack 1或更高版本，
 * Excel 2016 for Mac，
@@ -19,7 +24,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 * Office 365等。
 
 
-## 3.2 获取方式
+## 获取方式
 
 * 在Excel 2013/2016、Excel Online或Office 365中打开新的数据表。
 * **主页**选项卡或**插入**选项卡 > 加载项
@@ -35,7 +40,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 [更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
 
 
-## 3.3 使用方法
+## 使用方法
 
 * 准备您的JSON数据
 * 在[转换设置](profeatures.md)中，选择转换模式等。
@@ -52,7 +57,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
-## 3.4 JSON数据和转换设置
+## JSON数据和转换设置
 
 有关更多详细信息，请参阅[JSON数据和转换设置](profeatures.md)。
 
@@ -69,7 +74,7 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-## 3.5 限制条件
+## 限制条件
 - 每次转换最多1000个对象（行）
 - 每个数据集最多100个唯一属性（列）
 - 值中的数组将转换为Excel中的字符串

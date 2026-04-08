@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'JSON-to-Excel'
-copyright = '2025, WTSolutions'
+copyright = '2026, WTSolutions'
 author = 'WTSolutions'
 release = '5.0.0.0'
 # -- General configuration ---------------------------------------------------
@@ -16,7 +16,7 @@ release = '5.0.0.0'
 extensions = ['myst_parser','sphinx_sitemap']
 html_baseurl = 'https://json-to-excel.wtsolutions.cn/zh-cn/latest/'
 sitemap_url_scheme = "{link}"
-html_extra_path = ['robots.txt','ads.txt']
+html_extra_path = ['robots.txt','ads.txt','llms.txt']
 
 templates_path = ['_templates']
 exclude_patterns = []
