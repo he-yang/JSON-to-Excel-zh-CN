@@ -4,7 +4,7 @@
 
 
 ## JSON数据
-||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md) 和 <br> [本地化应用](LocalApp.md) | [Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -194,7 +194,7 @@ JSON数据必须符合以下结构之一：
 ## 转换设置
 
 ### 转换模式
-||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -210,7 +210,7 @@ JSON数据必须符合以下结构之一：
    - 默认转换无限深度。使用的最大嵌套深度设置自定义嵌套对象的最大深度（1到20，或无限）
 
 ### 嵌套分隔符
-||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -261,7 +261,7 @@ JSON数据必须符合以下结构之一：
 |2|Lily|Jaskson|15|
 
 ### 最大嵌套深度
-||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -315,7 +315,7 @@ Excel输出将如下所示：
 
 
 ## 无广告
-||[Web App](WebApp.md)|[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -334,6 +334,11 @@ Excel输出将如下所示：
 
 ## 专业代码 Pro Code
 
-专业代码是您在Stripe或Paddle上购买JSON转Excel时使用的`电子邮件地址`。访问专业版需要此代码。
+* 网络版方案
+    * Pro Code是您在Stripe上开启JSON-to-Excel订阅时使用的`电子邮件地址`。专业版包括无限制的数据转换。
+    * 网络版方案通过订阅获得专业版功能，订阅可以是月费、季度、半年、年费。
+* 本地化方案
+    * Pro Code是您在Stripe上完成本地化方案购买之后，通过电子邮件收到的Pro Code。包括无限制的数据转换。
+    * 本地化方案通过一次性购买获得专业版功能，购买后可终身使用。
 
 

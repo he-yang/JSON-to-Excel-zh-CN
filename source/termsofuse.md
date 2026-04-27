@@ -1,8 +1,8 @@
 # Service Agreement
 
-**Effective Date:** 2026-04-12
+**Effective Date:** 2026-04-27
 
-This service agreement is applicable to JSON to Excel web app, and JSON to Excel Excel add-in and WPS add-in.
+This service agreement is applicable to JSON to Excel Web App/Local App, and JSON to Excel Excel Add-in and WPS Add-in.
 For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com/he-yang/json-to-excel-api for service agreement.
 
 ## 1. Introduction
@@ -11,7 +11,7 @@ Welcome to the JSON-to-Excel service ("Service"). This Service Agreement ("Agree
 
 ## 2. Description of Service
 
-The JSON-to-Excel Service is a Microsoft Excel add-in, WPS add-in or web application that allows users to convert JSON files into Excel format within Excel/WPS. The Service is designed to facilitate the conversion of data from JSON format into Excel spreadsheets/WPS workbook, which can be used for data analysis, reporting, and other purposes. For the Pro Version, a paid subscription is required.
+The JSON-to-Excel Service is a Microsoft Excel add-in, WPS add-in or Web/Local application that allows users to convert JSON files into Excel format within Excel/WPS. The Service is designed to facilitate the conversion of data from JSON format into Excel spreadsheets/WPS workbook, which can be used for data analysis, reporting, and other purposes. For the Pro Version, a Pro Code is required.
 
 ## 3. User Requirements
 
@@ -26,13 +26,13 @@ We grant you a limited, non-exclusive, non-transferable, revocable license to us
 - Reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the add-in.
 - Distribute, sublicense, lease, rent, or otherwise transfer the add-in to any third party.
 - Use the Service for any illegal or unauthorized purpose.
-- Share or transfer your subscription to another user.
+- Share or transfer your Pro Code to another user.
 - Use the Service for any commercial purposes.
 
 
-## 5. Subscription Terms
+## 5. Web Based Solutions Subscription Terms and Localized Solutions Pro Code Purchase Terms
 
-The Pro Version of JSON-to-Excel are available through a monthly subscription. Key terms include:
+For Web Based Solutions, The Pro Version of JSON-to-Excel are available through a monthly subscription. Key terms include:
 - A 7-day free trial period is offered for new subscribers
 - You may cancel your subscription at any time during the trial period without charge
 - After the trial period, your subscription will automatically renew each month
@@ -40,6 +40,14 @@ The Pro Version of JSON-to-Excel are available through a monthly subscription. K
 - We reserve the right to modify subscription fees with 30 days' notice
 - All payments are non-refundable except as required by law
 
+
+For localized solutions, Pro Code Purchase Key terms include:
+- A one-time purchase is available for lifetime use
+- Each Pro Code is bound to one single device ID and can offer 1 single device to access Pro Version
+- No trial period is provided for localized solutions
+- After installing the Local App, you will see a Device ID shown in the app; this Device ID is required to be filled in during the checkout process
+- You will receive a Pro Code by email after the checkout process; this code is required to have unlimited data conversion
+- All payments are non-refundable except as required by law
 
 ## 6. User Responsibilities
 

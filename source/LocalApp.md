@@ -1,29 +1,32 @@
-# Web应用程序（JSON-to-Excel Web应用程序）
+# 本地化应用（JSON-to-Excel 本地化应用）
 
-[English](https://json-to-excel.wtsolutions.cn/en/latest/WebApp.html)
+[English](https://json-to-excel.wtsolutions.cn/en/latest/LocalApp.html)
 
 WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平面JSON和嵌套JSON转换为Excel。它提供了"JSON转Excel"的全场景解决方案，包括Excel加载项和Web应用程序：
 
 * 网络版方案
-    * <mark>Web应用程序：直接在网页浏览器中将JSON转换为Excel。</mark>（<-- 您当前所在位置）
+    * [Web应用程序：直接在网页浏览器中将JSON转换为Excel](WebApp.md)
     * [Excel加载项：在Excel中转换JSON为Excel，与Excel环境无缝集成。](ExcelAddIn.md)
     * [WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。](WPSAddIn.md)
     * [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
     * [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
 * 本地化方案
-    * [本地化应用：在本地化应用中转换JSON到Excel，支持离线转换](LocalApp.md)
+    * <mark>本地化应用：在本地化应用中转换JSON到Excel，支持离线转换</mark>(<-- 您当前所在位置>)
     * 本地化Excel加载项，即将发布
     * 本地化WPS加载项，即将发布
 
 ## 系统要求
 
-* 支持JavaScript的网页浏览器，例如Google Chrome、Mozilla Firefox、Safari或Microsoft Edge等。
-* 适用于Windows、Mac、Linux、Android、iOS等系统的浏览器。
+* Windows 10, 或更高版本
+* MacOS 11， 或更高版本
 
-## 访问方式
+## 下载
 
-* 打开支持JavaScript的网页浏览器，例如Google Chrome、Mozilla Firefox、Safari或Microsoft Edge等。
-* 在网页浏览器中打开以下URL：<a href="https://s.wtsolutions.cn/json-to-excel.html" target="_blank">https://s.wtsolutions.cn/json-to-excel.html</a>
+* [官方下载Windows版本](https://r2.wtsolutions.cn/j2e-releases/JSON-to-Excel-by-WTSolutions-LocalApp-6.0.0-win.exe)
+* [官方下载MacOS版本](https://r2.wtsolutions.cn/j2e-releases/JSON-to-Excel-by-WTSolutions-LocalApp-6.0.0.dmg)
+* [网盘下载1](https://pan.quark.cn/s/f22b4c5eaa76)
+* [网盘下载2](https://pan.baidu.com/s/1x2HDN2MSnhIAO04gr5w7xw?pwd=datg)
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
