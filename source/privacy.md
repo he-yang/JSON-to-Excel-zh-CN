@@ -1,11 +1,11 @@
 # Privacy Policy
 
-**Effective Date:** 2026-03-14
-**Last Revised:** 2026-03-14
+**Effective Date:** 2026-07-07
 
 
 
-This privacy policy is applicable to JSON to Excel web app, and JSON to Excel Excel add-in, WPS add-in.
+
+This privacy policy is applicable to JSON to Excel Web App/Local App, and JSON to Excel Excel Add-in/Local Excel Add-in, WPS add-in.
 For JSON to Excel api and JSON to Excel MCP service, refer to https://github.com/he-yang/json-to-excel-api for service agreement.
 
 ## 1. Introduction

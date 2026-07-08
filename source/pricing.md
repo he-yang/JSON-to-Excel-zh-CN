@@ -80,11 +80,18 @@
 
 <https://buy.stripe.com/eVq6oGfyj24IesG63g3Je0B?locale=zh>
 
-立即订购，原价99元，限时优惠价59元，终身使用（绑定单个设备ID）。使用优惠码`ExcelJSON202605`享受折扣。优惠码有效期至2026年5月31日。
+立即订购，99元终身使用（绑定单个设备ID）。
 
 安装本地应用后，您将在应用中看到设备ID。结账过程中需要填写此设备ID。结账完成后，您将通过电子邮件收到Pro Code。需要此代码才能实现无限制的数据转换。
 
 每个本地化方案Pro Code可支持1台设备访问专业版，且每个Pro Code绑定单个设备ID。本地化方案不提供试用期，如需7天免费试用，请使用网络版方案订阅。
+
+每个本地化方案的 Pro Code 对 Excel-to-JSON和 JSON-to-Excel 如下系列产品有效：
+- Excel to JSON [Local App](https://excel-to-json.wtsolutions.cn/zh-cn/latest/LocalApp.md)
+- Excel to JSON [Local Excel Addin](https://excel-to-json.wtsolutions.cn/zh-cn/latest/LocalExcelAddin.md)
+- JSON to Excel [Local App](LocalApp.md)
+- JSON to Excel [Local Excel Addin](LocalExcelAddIn.md)
+
 
 ## 售后服务
 

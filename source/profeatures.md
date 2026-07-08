@@ -4,7 +4,7 @@
 
 
 ## JSON数据
-||[Web App](WebApp.md) 和 <br> [本地化应用](LocalApp.md) | [Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md) 和 <br> [本地化应用](LocalApp.md) | [Excel 加载项](ExcelAddIn.md) 和 <br> [本地化Excel 加载项](LocalExcelAddIn.md) | [WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -194,7 +194,7 @@ JSON数据必须符合以下结构之一：
 ## 转换设置
 
 ### 转换模式
-||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md) 和 <br> [本地化Excel 加载项](LocalExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -210,7 +210,7 @@ JSON数据必须符合以下结构之一：
    - 默认转换无限深度。使用的最大嵌套深度设置自定义嵌套对象的最大深度（1到20，或无限）
 
 ### 嵌套分隔符
-||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md) 和 <br> [本地化Excel 加载项](LocalExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -261,7 +261,7 @@ JSON数据必须符合以下结构之一：
 |2|Lily|Jaskson|15|
 
 ### 最大嵌套深度
-||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md) 和 <br> [本地化Excel 加载项](LocalExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 
@@ -315,7 +315,7 @@ Excel输出将如下所示：
 
 
 ## 无广告
-||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+||[Web App](WebApp.md)和 <br> [本地化应用](LocalApp.md) |[Excel 加载项](ExcelAddIn.md) 和 <br> [本地化Excel 加载项](LocalExcelAddIn.md)|[WPS 加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |Applicable|✅|✅|✅|❌|❌|
 

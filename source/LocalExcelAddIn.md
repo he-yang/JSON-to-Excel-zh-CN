@@ -1,42 +1,38 @@
-# Excel 加载项（JSON转Excel Excel加载项）
+# 本地化 Excel 加载项（JSON转Excel 本地化Excel加载项）
 
-[English](https://json-to-excel.wtsolutions.cn/en/latest/ExcelAddIn.html)
+[English](https://json-to-excel.wtsolutions.cn/en/latest/LocalExcelAddIn.html)
 
 WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持平级和嵌套JSON转换为Excel。它提供了“JSON转Excel”的全场景解决方案，包括Excel加载项、Web应用程序：
 
 - 网络版方案
   - [Web应用：直接在浏览器中转换JSON到Excel。](WebApp.md)
-  - <mark>Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝集成。</mark>(<-- 您当前所在位置)
+  - [Excel加载项：在Excel中转换JSON到Excel，与Excel环境无缝集成。](ExcelAddIn.md)
   - [WPS加载项：在WPS中转换JSON到WPS工作表，与WPS环境无缝协作。](WPSAddIn.md)
   - [API：通过HTTPS POST请求在API中转换JSON到Excel](API.md)
   - [MCP服务器：在MCP服务器中转换JSON到Excel](MCP.md)
 - 本地化方案
   - [本地化应用：在本地化应用中转换JSON到Excel，支持离线转换](LocalApp.md)
-  - [本地化Excel加载项：在本地化Excel加载项中实现 JSON 转 Excel，与Excel环境无缝协作。](LocalExcelAddIn.md)
+  - <mark>本地化Excel加载项：在本地化Excel加载项中实现 JSON 转 Excel，与Excel环境无缝协作。</mark>(<-- 您当前所在位置)
   - 本地化WPS加载项，即将发布
+当前为 beta 版本，如果您在使用时遇到困难，请发送邮件到 he.yang@wtsolutions.cn。
 
-## 系统要求
+## 要求
 
-- Excel 2013 Service Pack 1或更高版本，
-- Excel 2016 for Mac，
-- Excel 2016或更高版本，
-- Excel Online，
-- Office 365等。
+### 系统要求
+* Windows 10或更高版本
+* MacOS 11或更高版本
 
-## 获取方式
+### Excel要求
+* Excel 2013 Service Pack 1 或更高版本，
+* Excel 2016 for Mac，
+* Excel 2016 或更高版本，
+* Office 365 等。
 
-- 在Excel 2013/2016、Excel Online或Office 365中打开新的数据表。
-- **主页**选项卡或**插入**选项卡 > 加载项
-- 在搜索框中，输入“JSON to Excel”
-- 按照屏幕上的说明安装加载项，安装完成后，您将在**主页**选项卡上看到带有JSON转Excel图标的“转换”按钮。
-- **主页**选项卡 > JSON转Excel > 转换
-- 现在您已准备好使用此加载项。
 
-### 获取加载项的视频指南
+## 下载安装及访问
+* Windows 用户[使用指南](./_static/使用指南-Windows系统-本地化%20Excel%20插件.docx)
+* MacOS 用户 [使用指南](./_static/使用指南-MacOS系统-本地化%20Excel%20插件.docx)
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114350819906550&bvid=BV1VE5azhETJ&cid=29457450569&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
 
 ## 使用方法
 

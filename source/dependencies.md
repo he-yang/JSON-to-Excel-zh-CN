@@ -11,7 +11,8 @@
 * [xlsx](https://github.com/SheetJS/js-xlsx) - [Apache-2.0 License](https://github.com/SheetJS/js-xlsx/blob/master/LICENSE)
 * [jsonlint](https://github.com/zaach/jsonlint) - [MIT License](https://github.com/zaach/jsonlint/blob/master/LICENSE)
 * [electron](https://github.com/electron/electron) - [MIT License](https://github.com/electron/electron/blob/main/LICENSE)
-* [node-machine-id](https://github.com/automation-stack/node-machine-id) - [MIT License](https://github.com/automation-stack/node-machine-id/blob/master/LICENSE)
+* [bytenode](https://github.com/bytenode/bytenode) - [MIT License](https://github.com/bytenode/bytenode/blob/main/LICENSE)
+* [@yao-pkg/pkg](https://github.com/yao-pkg/pkg) - [MIT License](https://github.com/yao-pkg/pkg/blob/main/LICENSE)
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
