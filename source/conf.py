@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'JSON-to-Excel'
+project = 'JSON-to-Excel 文档'
 copyright = '2026, WTSolutions'
 author = 'WTSolutions'
 release = '6.1.0.0'
@@ -29,5 +29,27 @@ source_suffix = {
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-html_theme = 'sphinx_rtd_theme'
+html_theme = "shibuya"
 html_static_path = ['_static']
+
+# 自定义导航链接
+# shibuya 主题的导航链接配置项
+html_theme_options = {
+    "nav_links": [
+        {
+            "title": "产品介绍",
+            "url": "https://s.wtsolutions.cn/excel-json-product.html"
+        },
+        {
+            "title": "JSON-to-Excel 在线应用",
+            "url": "https://s.wtsolutions.cn/json-to-excel.html"
+        },
+    ]
+}
+
+html_context = {
+    "languages": [
+        ("English", "/en/%s/", "en"),
+        ("中文", "/zh-cn/%s/", "zh-cn"),
+    ]
+}
