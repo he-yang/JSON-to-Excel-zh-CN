@@ -14,7 +14,10 @@ WTSolutions的JSON转Excel是一系列可将JSON转换为Excel的工具，支持
   - [本地化应用：在本地化应用中转换JSON到Excel，支持离线转换](LocalApp.md)
   - <mark>本地化Excel加载项：在本地化Excel加载项中实现 JSON 转 Excel，与Excel环境无缝协作。</mark>(<-- 您当前所在位置)
   - 本地化WPS加载项，即将发布
+
+:::{note}
 当前为 beta 版本，如果您在使用时遇到困难，请发送邮件到 he.yang@wtsolutions.cn。
+:::
 
 ## 要求
 

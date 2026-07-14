@@ -17,6 +17,7 @@ extensions = ['myst_parser','sphinx_sitemap']
 html_baseurl = 'https://json-to-excel.wtsolutions.cn/zh-cn/latest/'
 sitemap_url_scheme = "{link}"
 html_extra_path = ['robots.txt','ads.txt','llms.txt']
+myst_enable_extensions = ["colon_fence"]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -38,12 +39,30 @@ html_theme_options = {
     "nav_links": [
         {
             "title": "产品介绍",
-            "url": "https://s.wtsolutions.cn/excel-json-product.html"
+            "url": "https://s.wtsolutions.cn/excel-json-product.html",
+            "external": True
         },
         {
             "title": "JSON-to-Excel 在线应用",
-            "url": "https://s.wtsolutions.cn/json-to-excel.html"
+            "url": "https://s.wtsolutions.cn/json-to-excel.html",
+            "external": True
         },
+        {
+            "title": "相关产品",
+            "url": "products",
+            "children": [
+                {
+                    "title": "Excel-to-JSON",
+                    "url": "https://s.wtsolutions.cn/excel-json-product.html",
+                    "external": True
+                },
+                {
+                    "title": "Sheet-to-Doc",
+                    "url": "https://s.wtsolutions.cn/sheet-to-doc-product.html",
+                    "external": True
+                }
+            ]
+        }
     ]
 }
 
